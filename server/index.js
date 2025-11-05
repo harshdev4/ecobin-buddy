@@ -105,7 +105,7 @@ Rules:
 
 
 if (process.env.NODE_ENV === 'production') {
-  const distPath = path.join(__dirname, '../Client/dist');
+  const distPath = path.join(__dirname, '../client/dist');
   app.use(express.static(distPath));
 
   // 👇 Catch-all route for React
