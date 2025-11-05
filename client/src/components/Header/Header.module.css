@@ -1,0 +1,162 @@
+.header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #efffcd;
+    box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.200);
+}
+
+.logoContainer{
+    width: 210px;
+}
+
+.logo{
+    width: 100%;
+}
+
+.mobileNav {
+    display: none;
+}
+
+.navUl {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navLi {
+    color: var(--color-text-medium);
+    padding: 10px 12px;
+    border-radius: 12px;
+}
+
+.navLi:hover {
+    background-color: var(--color-primary-100);
+}
+
+.authLi {
+    background-color: unset;
+    padding: 10px;
+    border-radius: 12px;
+    color: var(--color-white);
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8px;
+    color: inherit;
+}
+
+.activeLink {
+    background-color: var(--color-primary-600);
+    color: var(white);
+}
+
+.activeLink:hover {
+    background-color: var(--color-primary-600);
+}
+
+.navIcon {
+    font-size: 1.5rem;
+}
+
+.headerBtnWrapper{
+    display: flex;
+}
+
+.headerAuthBtn {
+    border: 1px solid;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: var(--color-primary-700);
+}
+
+.headerSignBtn {
+    background: var(--color-primary-600);
+    color: var(--color-white);
+}
+
+.headerLoginBtn:hover {
+    background: var(--color-primary-600);
+    color: var(--color-white);
+}
+
+.headerSignBtn:hover {
+    background: var(--color-primary-500);
+}
+
+.menuIcon{
+    display: none;
+}
+
+@media (max-width: 499px){
+    .logoContainer{
+        width: 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .menuIcon{
+        display: block;
+        font-size: 1.3rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .desktopNav {
+        display: none;
+    }
+
+    .mobileNav {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 65%;
+        height: 100vh;
+        background-color: var(--color-white);
+        box-shadow: 0px 1px 6px 2px rgba(0, 0, 0, 0.200);
+        z-index: 10;
+        transition: right 0.8s ease-in-out;
+    }
+
+    .toggleMenu{
+        right: 0;
+    }
+
+    .closeMobileNavIcon {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 2.8rem;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .mobileNav>.navUl {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 70px 10px;
+    }
+
+    .mobileNav .navLink {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .mobileAuthBtnWrapper {
+        display: flex;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    .desktopNav span {
+        display: none;
+    }
+}

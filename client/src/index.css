@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* Primary Colors (Emerald - For sustainability and main actions) */
+    --color-primary-100: #d1fae5; /* Light background for tips */
+    --color-primary-500: #10b981; /* Main link/hover color */
+    --color-primary-600: #059669; /* Main button color, active nav */
+    --color-primary-700: #047857; /* Header background, logo text */
+    --color-primary-800: #065f46; /* Stronger text/border details */
+
+    /* Accent Colors (Sky - For secondary actions like 'Analyze' and chat bubbles) */
+    --color-accent-500: #0ea5e9;
+    --color-accent-600: #0284c7;
+
+    /* Neutral Colors (Gray - For backgrounds, borders, and text) */
+    --color-white: #ffffff;
+    --color-bg-light: #f3f4f6; /* Used for main screen background */
+    --color-bg-darker: #e5e7eb;
+    --color-text-light: #6b7280; /* Gray-500 */
+    --color-text-medium: #3a3b3b; /* Gray-500 */
+    --color-text-dark: #1f2937;   /* Gray-800, main text */
+
+    /* Status Colors */
+    --color-status-success: #16a34a; /* Green for success */
+    --color-status-warning: #f97316; /* Orange-500 for warnings/compostable */
+    --color-status-error: #dc2626;   /* Red-600 for errors */
+
+    /* Font Setting */
+    font-family: "Poppins", sans-serif;;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body uses the defined font */
+body {
+    background-color: var(--color-bg-light);
+    background-image: url('/images/body.png');
+    color: var(--color-text-dark);
+}
