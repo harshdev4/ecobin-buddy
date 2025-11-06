@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import styles from './Signup.module.css';
+import styles from './SignUp.module.css';
 import { Link } from 'react-router-dom';
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import {axiosInstance} from '../../utils/axiosInstance'
