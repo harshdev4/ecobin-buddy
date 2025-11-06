@@ -86,35 +86,35 @@ const Header = () => {
         <IoMdClose className={styles.closeMobileNavIcon} onClick={toggleMenu} />
         <ul className={styles.navUl}>
           <li className={`${styles.navLi} ${path == '/analyse-image' && styles.activeLink}`}>
-            <Link className={styles.navLink} style={path == '/analyse-image' ? { color: 'white' } : undefined} to="analyse-image">
+            <Link className={styles.navLink} style={path == '/analyse-image' ? { color: 'white' } : undefined} to="analyse-image" onClick={toggleMenu}>
               <IoCloudUploadOutline className={styles.navIcon} />
               <span>Identify Waste</span>
             </Link>
           </li>
 
           <li className={`${styles.navLi} ${path == '/quiz' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="quiz" style={path == '/quiz' ? { color: 'white' } : undefined}>
+            <Link className={styles.navLink} to="quiz" style={path == '/quiz' ? { color: 'white' } : undefined} onClick={toggleMenu}>
               <MdOutlineQuiz className={styles.navIcon} />
               <span>Quiz</span>
             </Link>
           </li>
 
           <li className={`${styles.navLi} ${path == '/tips' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="tips" style={path == '/tips' ? { color: 'white' } : undefined}>
+            <Link className={styles.navLink} to="tips" style={path == '/tips' ? { color: 'white' } : undefined} onClick={toggleMenu}>
               <MdOutlineTipsAndUpdates className={styles.navIcon} />
               <span>Tips</span>
             </Link>
           </li>
 
           <li className={`${styles.navLi} ${path == '/community' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="community" style={path == '/community' ? { color: 'white' } : undefined}>
+            <Link className={styles.navLink} to="community" style={path == '/community' ? { color: 'white' } : undefined} onClick={toggleMenu}>
               <RiUserCommunityLine className={styles.navIcon} />
               <span>Community</span>
             </Link>
           </li>
 
           <li className={`${styles.navLi} ${path == '/ai-chat' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="ai-chat" style={path == '/ai-chat' ? { color: 'white' } : undefined}>
+            <Link className={styles.navLink} to="ai-chat" style={path == '/ai-chat' ? { color: 'white' } : undefined} onClick={toggleMenu}>
               <IoChatbubbleOutline className={styles.navIcon} />
               <span>AI Chat</span>
             </Link>
@@ -122,19 +122,13 @@ const Header = () => {
 
           <div className={styles.mobileAuthBtnWrapper}>
             <li className={`${styles.navLi} ${styles.authLi}`}>
-              <Link
-                className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLoginBtn}`}
-                to="login"
-              >
+              <Link className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLoginBtn}`} to="login" onClick={toggleMenu}>
                 Login
               </Link>
             </li>
 
             <li className={`${styles.navLi} ${styles.authLi}`}>
-              <Link
-                className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerSignBtn}`}
-                to="sign-up"
-              >
+              <Link className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerSignBtn}`} to="sign-up" onClick={toggleMenu}>
                 Sign Up
               </Link>
             </li>
