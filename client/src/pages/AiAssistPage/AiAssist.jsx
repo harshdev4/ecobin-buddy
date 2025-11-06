@@ -3,6 +3,7 @@ import styles from './AiAssist.module.css';
 import { BsArrowRight } from "react-icons/bs";
 import { axiosInstance } from '../../utils/axiosInstance.js'
 import TypingIndicator from '../../components/TypingIndicator/TypingIndicator.jsx';
+import Markdown from 'react-markdown'
 
 const AiAssist = () => {
   const [messages, setMessages] = useState([]);
@@ -51,7 +52,7 @@ const AiAssist = () => {
 
       <div className={styles.chatArea}>
         {messages.length > 0 && messages.map((message, index) => (
-          <p key={index} className={`${styles.chatMessage} ${message.fromAi ? styles.fromAI : styles.fromUser}`}>{message.text}</p>
+          <p key={index} className={`${styles.chatMessage} ${message.fromAi ? styles.fromAI : styles.fromUser}`}><Markdown>{message.text}</Markdown></p>
         ))
         }
         {pending && <TypingIndicator/>}
@@ -59,7 +60,7 @@ const AiAssist = () => {
       </div>
 
       <form className={styles.inputForm} onSubmit={handleSubmit}>
-        <input type="text" value={userInput} name="userInput" placeholder='Type your message here...' className={styles.userInput} onChange={(e) => handleUserInput(e)} />
+        <input type="text" value={userInput} name="userInput" placeholder='Type your message here...' className={styles.userInput} autoComplete='off' onChange={(e) => handleUserInput(e)} />
         <button disabled={!userInput} type='submit' className={styles.inputSubmitBtn}><BsArrowRight /></button>
       </form>
     </div>
