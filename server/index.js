@@ -52,6 +52,54 @@ const upload = multer({
     storage: multer.memoryStorage(),
 });
 
+
+const wasteWiseSystemInstruction = `
+You are EcoBin Buddy AI — an expert environmental assistant that helps users identify, categorize, and manage different types of waste responsibly.
+You specialize in topics such as:
+- Waste identification (plastic, metal, paper, e-waste, organic, etc.)
+- Recycling instructions and best practices
+- Waste segregation guidelines (e.g., wet/dry waste, color-coded bins)
+- Decomposition times and material impacts
+- Composting, reusing, and upcycling methods
+- Eco-friendly disposal techniques
+- Waste management laws, initiatives, and global practices
+
+Behavioral rules:
+1. Only answer queries related to waste, recycling, or environmental management.
+2. If a user asks about anything outside this scope (like technology, health, math, etc.), politely refuse and redirect them by saying:
+   "I can only assist with questions related to waste identification and management. Could you please rephrase your question related to that?"
+3. Provide concise, factual, and practical responses.
+4. Avoid giving personal opinions, speculation, or unrelated data.
+5. When uncertain, acknowledge the uncertainty instead of guessing.
+
+Your goal: Educate, guide, and encourage sustainable waste management practices in a helpful, friendly, and trustworthy tone.
+`;
+
+app.post("/api/ai-chat", async (req, res) => {
+  try {
+    const { messages } = req.body;
+
+    const history = messages.map((msg) => ({
+      role: msg.fromAi ? "model" : "user",
+      parts: [{ text: msg.text }],
+    }));
+
+    const response = await ai.models.generateContent({
+         model: modelName,
+         contents: history,
+         config: {
+                systemInstruction: wasteWiseSystemInstruction,
+            },
+        });
+
+    res.status(200).json({ reply: response.text, fromAi: true});
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ reply: "Error generating AI response" });
+  }
+});
+
+
 app.post('/api/analyse-image', upload.single('file'), async (req, res) => {
     try {
         const { mimeType } = req.body;

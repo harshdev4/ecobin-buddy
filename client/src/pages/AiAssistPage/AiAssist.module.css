@@ -1,0 +1,94 @@
+.aiAssistPage{
+}
+
+.mainHeading{
+    text-align: center;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    position: sticky;
+    background-color: #d7e6d3;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.048);
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.mainHeadingSpan{
+    color: #58b992;
+}
+
+.chatArea{
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.chatMessage{
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: white;
+    max-width: 70%;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.233);
+}
+
+.fromAI{
+    align-self: flex-start;
+}
+
+.fromUser{
+    background-color: #58b992;
+    color: white;
+    align-self: flex-end;
+}
+
+.dummyDiv{
+    height: 50px;
+}
+
+.inputForm{
+    width: 100%;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    box-shadow: -3px 0 6px rgba(0, 0, 0, 0.432);
+}
+
+.userInput{
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    outline: 0;
+    border-radius: 14px;
+    border: 1px solid gray;
+}
+
+.userInput:focus{
+    border: 1px solid #58b992;
+    box-shadow: 0px 0px 3px inset #58b992;
+}
+
+.inputSubmitBtn{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 0;
+    background-color: #58b992;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width:599px){
+    .mainHeading{
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+    .chatMessage{
+       max-width: 80%;
+    }
+}

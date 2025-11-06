@@ -1,0 +1,93 @@
+.quizPage{
+    position: relative;
+    padding: 20px 30px;
+}
+
+.quizHeading{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.scoreCount{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: 500;
+}
+
+.quizArea{
+    background-color: white;
+    padding: 12px 20px;
+    border-radius: 14px;
+    width: 65%;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.quizQues{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+.optionContainerUl{
+    margin-top: 15px;
+}
+
+.option{
+    list-style: none;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    background: rgb(202, 201, 201);
+    cursor: pointer;;
+}
+
+.option:hover{
+    background: rgb(185, 185, 185);;
+}
+
+.correctAnswer, .correctAnswer:hover{
+    background-color: #4CAF50;
+    color: white;
+}
+
+.wrongAnswer, .wrongAnswer:hover{
+    background-color: #F44336;
+    color: white;
+}
+
+.continueBtn{
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    align-self: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 599px){
+    .quizArea{
+        width: 100%;
+    }
+
+    .quizQues{
+        font-size: 1.1rem;
+    }
+
+    .option{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 599px) and (max-width: 1200px){
+     .quizArea{
+        width: 90%;
+    }
+}

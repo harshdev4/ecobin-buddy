@@ -1,0 +1,1354 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "question": "What is the process of converting waste into new materials called?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Burning"
+        },
+        {
+          "id": 2,
+          "text": "Recycling"
+        },
+        {
+          "id": 3,
+          "text": "Dumping"
+        },
+        {
+          "id": 4,
+          "text": "Sweeping"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Recycling"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 2,
+      "question": "Vegetable peels and food leftovers are examples of:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Dry waste"
+        },
+        {
+          "id": 2,
+          "text": "Wet waste"
+        },
+        {
+          "id": 3,
+          "text": "E-waste"
+        },
+        {
+          "id": 4,
+          "text": "Plastic waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Wet waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 3,
+      "question": "What does the 3R principle stand for?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Reduce, Reuse, Recycle"
+        },
+        {
+          "id": 2,
+          "text": "Restore, Remove, Replace"
+        },
+        {
+          "id": 3,
+          "text": "Rebuild, Renew, Recheck"
+        },
+        {
+          "id": 4,
+          "text": "Reduce, Repair, Reuse"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Reduce, Reuse, Recycle"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 4,
+      "question": "Green-colored bins are used for:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Plastic waste"
+        },
+        {
+          "id": 2,
+          "text": "Hazardous waste"
+        },
+        {
+          "id": 3,
+          "text": "Wet waste"
+        },
+        {
+          "id": 4,
+          "text": "E-waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Wet waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 5,
+      "question": "Blue-colored bins are used for:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Metal waste"
+        },
+        {
+          "id": 2,
+          "text": "Wet waste"
+        },
+        {
+          "id": 3,
+          "text": "Dry waste"
+        },
+        {
+          "id": 4,
+          "text": "Biomedical waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Dry waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 6,
+      "question": "Which gas is commonly released from landfills?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Oxygen"
+        },
+        {
+          "id": 2,
+          "text": "Methane"
+        },
+        {
+          "id": 3,
+          "text": "Helium"
+        },
+        {
+          "id": 4,
+          "text": "Nitrogen"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Methane"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 7,
+      "question": "The first step of proper waste management is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Transportation"
+        },
+        {
+          "id": 2,
+          "text": "Segregation"
+        },
+        {
+          "id": 3,
+          "text": "Burning"
+        },
+        {
+          "id": 4,
+          "text": "Dumping"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Segregation"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 8,
+      "question": "Which decomposes faster?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Plastic"
+        },
+        {
+          "id": 2,
+          "text": "Paper"
+        },
+        {
+          "id": 3,
+          "text": "Glass"
+        },
+        {
+          "id": 4,
+          "text": "Metal"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Paper"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 9,
+      "question": "Plastic is an example of:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Biodegradable waste"
+        },
+        {
+          "id": 2,
+          "text": "Wet waste"
+        },
+        {
+          "id": 3,
+          "text": "Non-biodegradable waste"
+        },
+        {
+          "id": 4,
+          "text": "E-waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Non-biodegradable waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 10,
+      "question": "Compost is made from:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Plastic waste"
+        },
+        {
+          "id": 2,
+          "text": "Organic waste"
+        },
+        {
+          "id": 3,
+          "text": "Glass waste"
+        },
+        {
+          "id": 4,
+          "text": "Electronic waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Organic waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 11,
+      "question": "SWM stands for:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Solid Waste Management"
+        },
+        {
+          "id": 2,
+          "text": "Soil Water Management"
+        },
+        {
+          "id": 3,
+          "text": "Sewage Waste Monitoring"
+        },
+        {
+          "id": 4,
+          "text": "Sustainable Waste Method"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Solid Waste Management"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 12,
+      "question": "Segregation of waste means:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Burning waste"
+        },
+        {
+          "id": 2,
+          "text": "Separating waste"
+        },
+        {
+          "id": 3,
+          "text": "Selling waste"
+        },
+        {
+          "id": 4,
+          "text": "Mixing all waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Separating waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 13,
+      "question": "Batteries and chemicals fall under:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Wet waste"
+        },
+        {
+          "id": 2,
+          "text": "Hazardous waste"
+        },
+        {
+          "id": 3,
+          "text": "Dry waste"
+        },
+        {
+          "id": 4,
+          "text": "Plastic waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Hazardous waste"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 14,
+      "question": "Waste that harms humans or environment is called:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Toxic waste"
+        },
+        {
+          "id": 2,
+          "text": "Organic waste"
+        },
+        {
+          "id": 3,
+          "text": "Neutral waste"
+        },
+        {
+          "id": 4,
+          "text": "Green waste"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Toxic waste"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 15,
+      "question": "Zero-waste lifestyle means:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Producing minimum waste"
+        },
+        {
+          "id": 2,
+          "text": "Producing more waste"
+        },
+        {
+          "id": 3,
+          "text": "Burning all waste"
+        },
+        {
+          "id": 4,
+          "text": "Storing waste at home"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Producing minimum waste"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 16,
+      "question": "Swachh Bharat Mission was launched in:",
+      "options": [
+        {
+          "id": 1,
+          "text": "2012"
+        },
+        {
+          "id": 2,
+          "text": "2014"
+        },
+        {
+          "id": 3,
+          "text": "2016"
+        },
+        {
+          "id": 4,
+          "text": "2018"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "2014"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 17,
+      "question": "Who launched the Swachh Bharat Mission?",
+      "options": [
+        {
+          "id": 1,
+          "text": "A.P.J. Abdul Kalam"
+        },
+        {
+          "id": 2,
+          "text": "Narendra Modi"
+        },
+        {
+          "id": 3,
+          "text": "Rajnath Singh"
+        },
+        {
+          "id": 4,
+          "text": "Amit Shah"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Narendra Modi"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 18,
+      "question": "Main focus of Swachh Bharat Mission is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Roads"
+        },
+        {
+          "id": 2,
+          "text": "Cleanliness"
+        },
+        {
+          "id": 3,
+          "text": "Transportation"
+        },
+        {
+          "id": 4,
+          "text": "Electricity"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Cleanliness"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 19,
+      "question": "SBM was launched on whose birth anniversary?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Sardar Patel"
+        },
+        {
+          "id": 2,
+          "text": "Mahatma Gandhi"
+        },
+        {
+          "id": 3,
+          "text": "APJ Abdul Kalam"
+        },
+        {
+          "id": 4,
+          "text": "Bhagat Singh"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Mahatma Gandhi"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 20,
+      "question": "What is the slogan of Swachh Bharat?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Clean India Green India"
+        },
+        {
+          "id": 2,
+          "text": "Keep Plastic Alive"
+        },
+        {
+          "id": 3,
+          "text": "Less Waste More Problems"
+        },
+        {
+          "id": 4,
+          "text": "Stop Recycling"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Clean India Green India"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 21,
+      "question": "SBM promotes construction of:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Hospitals"
+        },
+        {
+          "id": 2,
+          "text": "Toilets"
+        },
+        {
+          "id": 3,
+          "text": "Roads"
+        },
+        {
+          "id": 4,
+          "text": "Bridges"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Toilets"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 22,
+      "question": "SBM mainly focuses on:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Urban and rural cleanliness"
+        },
+        {
+          "id": 2,
+          "text": "Railway stations only"
+        },
+        {
+          "id": 3,
+          "text": "Schools only"
+        },
+        {
+          "id": 4,
+          "text": "Water supply only"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Urban and rural cleanliness"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 23,
+      "question": "Symbol used in SBM logo is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Broom"
+        },
+        {
+          "id": 2,
+          "text": "Leaf"
+        },
+        {
+          "id": 3,
+          "text": "Tree"
+        },
+        {
+          "id": 4,
+          "text": "Cloud"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Broom"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 24,
+      "question": "Clean surroundings help reduce:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Pollution"
+        },
+        {
+          "id": 2,
+          "text": "Diseases"
+        },
+        {
+          "id": 3,
+          "text": "Accidents"
+        },
+        {
+          "id": 4,
+          "text": "Sports activities"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Diseases"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 25,
+      "question": "ODF stands for:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Open Defecation Free"
+        },
+        {
+          "id": 2,
+          "text": "Open Drainage Flow"
+        },
+        {
+          "id": 3,
+          "text": "Over Dumping Factor"
+        },
+        {
+          "id": 4,
+          "text": "Outdoor Dust Free"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Open Defecation Free"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 26,
+      "question": "Which ministry manages SBM?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Home Ministry"
+        },
+        {
+          "id": 2,
+          "text": "Ministry of Housing and Urban Affairs"
+        },
+        {
+          "id": 3,
+          "text": "Agriculture Ministry"
+        },
+        {
+          "id": 4,
+          "text": "Finance Ministry"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Ministry of Housing and Urban Affairs"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 27,
+      "question": "Cleanliness is directly linked to:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Sports"
+        },
+        {
+          "id": 2,
+          "text": "Health"
+        },
+        {
+          "id": 3,
+          "text": "Fashion"
+        },
+        {
+          "id": 4,
+          "text": "Festivals"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Health"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 28,
+      "question": "Which campaign promotes reduction of single-use plastic?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Fit India"
+        },
+        {
+          "id": 2,
+          "text": "Beat Plastic Pollution"
+        },
+        {
+          "id": 3,
+          "text": "Digital India"
+        },
+        {
+          "id": 4,
+          "text": "Make in India"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Beat Plastic Pollution"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 29,
+      "question": "Unclean surroundings mainly cause:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Skin diseases"
+        },
+        {
+          "id": 2,
+          "text": "Water-borne diseases"
+        },
+        {
+          "id": 3,
+          "text": "Blood pressure"
+        },
+        {
+          "id": 4,
+          "text": "Hair fall"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Water-borne diseases"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 30,
+      "question": "Clean India campaign encourages citizens to:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Plant trees daily"
+        },
+        {
+          "id": 2,
+          "text": "Clean surroundings regularly"
+        },
+        {
+          "id": 3,
+          "text": "Burn waste"
+        },
+        {
+          "id": 4,
+          "text": "Create more waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Clean surroundings regularly"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 31,
+      "question": "Single-use plastics are harmful because:",
+      "options": [
+        {
+          "id": 1,
+          "text": "They dissolve in water"
+        },
+        {
+          "id": 2,
+          "text": "They cause pollution"
+        },
+        {
+          "id": 3,
+          "text": "They smell good"
+        },
+        {
+          "id": 4,
+          "text": "They increase greenery"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "They cause pollution"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 32,
+      "question": "Which of the following can be recycled?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Glass"
+        },
+        {
+          "id": 2,
+          "text": "Metal"
+        },
+        {
+          "id": 3,
+          "text": "Plastic"
+        },
+        {
+          "id": 4,
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "id": 4,
+        "text": "All of the above"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 33,
+      "question": "E-waste refers to:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Electrical and electronic waste"
+        },
+        {
+          "id": 2,
+          "text": "Eating waste"
+        },
+        {
+          "id": 3,
+          "text": "Earth waste"
+        },
+        {
+          "id": 4,
+          "text": "Environment waste"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Electrical and electronic waste"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 34,
+      "question": "Which of the following is e-waste?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Banana peels"
+        },
+        {
+          "id": 2,
+          "text": "Broken mobile"
+        },
+        {
+          "id": 3,
+          "text": "Plastic bottle"
+        },
+        {
+          "id": 4,
+          "text": "Leaves"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Broken mobile"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 35,
+      "question": "Burning garbage should be avoided because:",
+      "options": [
+        {
+          "id": 1,
+          "text": "It creates smoke"
+        },
+        {
+          "id": 2,
+          "text": "It releases harmful gases"
+        },
+        {
+          "id": 3,
+          "text": "It causes health issues"
+        },
+        {
+          "id": 4,
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "id": 4,
+        "text": "All of the above"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 36,
+      "question": "Biodegradable waste:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Cannot be decomposed"
+        },
+        {
+          "id": 2,
+          "text": "Can be decomposed naturally"
+        },
+        {
+          "id": 3,
+          "text": "Is always plastic"
+        },
+        {
+          "id": 4,
+          "text": "Is always metal"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Can be decomposed naturally"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 37,
+      "question": "Eco-friendly bags are usually made of:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Cloth"
+        },
+        {
+          "id": 2,
+          "text": "Plastic"
+        },
+        {
+          "id": 3,
+          "text": "Metal"
+        },
+        {
+          "id": 4,
+          "text": "Rubber"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Cloth"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 38,
+      "question": "Carbon footprint refers to:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Marks on soil"
+        },
+        {
+          "id": 2,
+          "text": "Total greenhouse gases produced"
+        },
+        {
+          "id": 3,
+          "text": "Footwear size"
+        },
+        {
+          "id": 4,
+          "text": "Soil pollution"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Total greenhouse gases produced"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 39,
+      "question": "Trees help reduce:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Oxygen"
+        },
+        {
+          "id": 2,
+          "text": "Methane"
+        },
+        {
+          "id": 3,
+          "text": "Carbon dioxide"
+        },
+        {
+          "id": 4,
+          "text": "Hydrogen"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Carbon dioxide"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 40,
+      "question": "Turning organic waste into fertilizer is called:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Milling"
+        },
+        {
+          "id": 2,
+          "text": "Composting"
+        },
+        {
+          "id": 3,
+          "text": "Filtering"
+        },
+        {
+          "id": 4,
+          "text": "Mining"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Composting"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 41,
+      "question": "Which waste takes the longest to decompose?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Paper"
+        },
+        {
+          "id": 2,
+          "text": "Plastic"
+        },
+        {
+          "id": 3,
+          "text": "Cotton"
+        },
+        {
+          "id": 4,
+          "text": "Food waste"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Plastic"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 42,
+      "question": "Cloth bags are better than plastic bags because:",
+      "options": [
+        {
+          "id": 1,
+          "text": "They are washable"
+        },
+        {
+          "id": 2,
+          "text": "They are reusable"
+        },
+        {
+          "id": 3,
+          "text": "They are eco-friendly"
+        },
+        {
+          "id": 4,
+          "text": "All of the above"
+        }
+      ],
+      "answer": {
+        "id": 4,
+        "text": "All of the above"
+      },
+      "difficulty": "Easy"
+    },
+    {
+      "id": 43,
+      "question": "Purpose of waste segregation is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "To mix waste"
+        },
+        {
+          "id": 2,
+          "text": "To reuse harmful waste"
+        },
+        {
+          "id": 3,
+          "text": "To manage waste efficiently"
+        },
+        {
+          "id": 4,
+          "text": "To increase waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "To manage waste efficiently"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 44,
+      "question": "Medicine strips are considered:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Wet waste"
+        },
+        {
+          "id": 2,
+          "text": "Dry waste"
+        },
+        {
+          "id": 3,
+          "text": "Hazardous waste"
+        },
+        {
+          "id": 4,
+          "text": "Metal waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Hazardous waste"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 45,
+      "question": "Recyclable containers should be washed because:",
+      "options": [
+        {
+          "id": 1,
+          "text": "It looks clean"
+        },
+        {
+          "id": 2,
+          "text": "It improves recyclability"
+        },
+        {
+          "id": 3,
+          "text": "It reduces weight"
+        },
+        {
+          "id": 4,
+          "text": "It smells good"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "It improves recyclability"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 46,
+      "question": "Which city is often known for clean waste management practices?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Indore"
+        },
+        {
+          "id": 2,
+          "text": "Mumbai"
+        },
+        {
+          "id": 3,
+          "text": "Patna"
+        },
+        {
+          "id": 4,
+          "text": "Chennai"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Indore"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 47,
+      "question": "Best way to dispose old mobile phones is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Throw in dustbin"
+        },
+        {
+          "id": 2,
+          "text": "Burn it"
+        },
+        {
+          "id": 3,
+          "text": "Sell or give to e-waste center"
+        },
+        {
+          "id": 4,
+          "text": "Bury it"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Sell or give to e-waste center"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 48,
+      "question": "MRF stands for:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Material Recovery Facility"
+        },
+        {
+          "id": 2,
+          "text": "Major Recycling Foundation"
+        },
+        {
+          "id": 3,
+          "text": "Municipal Reuse Forum"
+        },
+        {
+          "id": 4,
+          "text": "Mixed Resource Fund"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Material Recovery Facility"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 49,
+      "question": "Main cause of rising waste in cities is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Less population"
+        },
+        {
+          "id": 2,
+          "text": "Overuse of plastic"
+        },
+        {
+          "id": 3,
+          "text": "Rural migration"
+        },
+        {
+          "id": 4,
+          "text": "More rainfall"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Overuse of plastic"
+      },
+      "difficulty": "Medium"
+    },
+    {
+      "id": 50,
+      "question": "One thing every citizen can do for Clean India is:",
+      "options": [
+        {
+          "id": 1,
+          "text": "Throw waste anywhere"
+        },
+        {
+          "id": 2,
+          "text": "Reduce and segregate waste"
+        },
+        {
+          "id": 3,
+          "text": "Burn plastic"
+        },
+        {
+          "id": 4,
+          "text": "Use more disposables"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Reduce and segregate waste"
+      },
+      "difficulty": "Easy"
+    }
+  ]
+}
