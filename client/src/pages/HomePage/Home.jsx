@@ -1,15 +1,13 @@
 import React, { useEffect, useRef, useState } from 'react'
 import styles from './Home.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useOutletContext } from 'react-router-dom';
 import { IoChatbubbleOutline, IoCloudUploadOutline } from 'react-icons/io5';
-import heroImage1 from '/images/hero-1.jpg';
-import heroImage2 from '/images/hero-2.jpg';
-import heroImage3 from '/images/hero-3.jpg';
 
 const Home = () => {
-  const images = [heroImage1, heroImage2, heroImage3];
-  const [bgImage, setBgImage] = useState(null);
+  const { images } = useOutletContext();
+  const [bgImage, setBgImage] = useState(images[0]);
   const indexRef = useRef(0);
+
   useEffect(() => {
     const changeBg = setInterval(() => {
       setBgImage(images[indexRef.current])

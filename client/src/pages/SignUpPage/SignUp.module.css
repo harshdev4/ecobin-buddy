@@ -1,0 +1,101 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #1b4332;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #2d6a4f;
+}
+
+.form {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 1rem;
+    color: #1b4332;
+    text-align: center;
+}
+
+.input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.input:focus {
+    border-color: #2d6a4f;
+}
+
+.passwordWrapper {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+}
+
+.eyeIcon{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.form button {
+    padding: 0.8rem;
+    background: #2d6a4f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form button:hover {
+    background: #1b4332;
+}
+
+.redirect {
+    margin-top: 1rem;
+    text-align: center;
+    color: #1b4332;
+}
+
+.redirect a {
+    color: #2d6a4f;
+    text-decoration: none;
+    font-weight: 600;
+}
