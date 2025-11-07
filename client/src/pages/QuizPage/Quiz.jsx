@@ -92,7 +92,7 @@ const Quiz = () => {
   return (
     <div className={styles.quizPage}>
       <h2 className={styles.quizHeading}>Quiz</h2>
-      <h3 className={styles.scoreCount}>Score: {score}</h3>
+      <h3 className={styles.scoreCount}>Present level: {score}</h3>
 
       <div className={styles.quizArea}>
         <p className={styles.quizQues}>{quiz.question}</p>
