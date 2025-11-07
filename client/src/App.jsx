@@ -11,24 +11,26 @@ const App = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-useEffect(() => {
-  const authPages = ["/login", "/sign-up"];
+  useEffect(() => {
+    const authPages = ["/login", "/sign-up"];
+    console.log(loading);
+    if (loading) return;
+    console.log(loading);
 
-  if (loading) return;
+    if (user && authPages.includes(location.pathname)) {
+      navigate("/", { replace: true });
+    } else {
+      if (!user && !authPages.includes(location.pathname)) {
+        navigate('/login');
+      }
+    }
+  }, [user, loading, location.pathname, navigate]);
 
-  if (user && authPages.includes(location.pathname)) {
-    navigate("/", { replace: true });
-  } else if (!user && !authPages.includes(location.pathname)) {
-    navigate("/login");
-  }
-}, [user, loading, location.pathname, navigate]);
-
-  
   return (
     <>
-    <Header></Header>
-    <Outlet context={{ images }}></Outlet>
-    <Footer></Footer>
+      <Header></Header>
+      <Outlet context={{ images }}></Outlet>
+      {location.pathname !== '/ai-chat' && <Footer></Footer>}
     </>
   )
 }

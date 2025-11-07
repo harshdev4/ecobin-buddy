@@ -6,7 +6,7 @@ const AuthContext = createContext();
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     // 🔹 Check if logged in (auto-login)
     useEffect(() => {
         const checkAuth = async () => {
@@ -16,6 +16,7 @@ export const AuthProvider = ({ children }) => {
                 setUser(res.data.user);
             } catch (error) {
                 setUser(null);
+
             } finally {
                 setLoading(false);
             }
