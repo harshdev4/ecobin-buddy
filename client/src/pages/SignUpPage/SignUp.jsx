@@ -3,10 +3,14 @@ import styles from './SignUp.module.css';
 import { Link } from 'react-router-dom';
 import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import {axiosInstance} from '../../utils/axiosInstance'
+import { useAuth } from '../../context/AuthContext';
+import Loader from '../../components/Loader/Loader'
 
 const Signup = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
   const [isPassVisible, setIsPassVisible] = useState(false);
+
+  const {setUser, loading, setLoading} = useAuth();
 
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
@@ -14,16 +18,23 @@ const Signup = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await axiosInstance.post('/signup', formData);
-      console.log(res.data.user);
+      setUser(res.data.user);
+      toast.success("Signed in successfully");
     } catch (error) {
       console.log(error);
+      toast.error("Something went wrong");
+    }
+    finally{
+      setLoading(false);
     }
   };
 
   return (
     <div className={styles.container}>
+      {loading && <Loader></Loader>}
       <h1 className={styles.logo}>EcoBin <span>Buddy</span></h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h2>Create Account</h2>

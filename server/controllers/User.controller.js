@@ -1,6 +1,7 @@
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcryptjs';
 import User from '../models/User.model.js';
+import Quiz from "../models/Quiz.model.js";
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -86,3 +87,66 @@ export const logout = (_, res) => {
     res.status(200).json({ message: "Logged out successfully" });
 }
 
+export const fetchScore = async (req, res) => {
+  try {
+    const {userId} = req.params;
+    const user = await User.findById(userId);
+    res.status(200).json(user.score);
+  } catch (error) {
+    console.log(error);
+    
+    res.status(500).json({message: "Something went wrong"});
+  }
+}
+
+export const getUnattemptedQuiz = async (req, res) => {
+  try {
+    const { userId } = req.params;
+
+    if (!userId) {
+      return res.status(404).json({ message: "UserId not found" });
+    }
+
+    const user = await User.findById(userId);
+    if (!user) return res.status(404).json({ message: "User not found" });
+
+    const normalizedLevel =
+      user.level.charAt(0).toUpperCase() + user.level.slice(1).toLowerCase();
+
+    const unattemptedQuiz = await Quiz.find({
+      difficulty: normalizedLevel,
+      isAttempted: { $nin: [user._id] },
+    });
+
+    res.status(200).json(unattemptedQuiz);
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
+
+export const attemptQuiz = async (req, res) => {
+  try {
+    const { userId, quizId, isCorrect } = req.body;
+
+    const user = await User.findById(userId);
+    const quiz = await Quiz.findOne({id: quizId});
+
+    if (!user || !quiz)
+      return res.status(404).json({ message: "User or Quiz not found" });
+
+    // Add user to attempted list
+    quiz.isAttempted.push(user._id);
+    await quiz.save();
+
+    // Update user score
+    if (isCorrect) user.score += 5;
+    await user.save();
+
+    res.status(200).json({ score: user.score });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: "Server error" });
+  }
+};

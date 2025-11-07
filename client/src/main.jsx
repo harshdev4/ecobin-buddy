@@ -11,6 +11,8 @@ import Community from './pages/CommunityPage/Community.jsx'
 import Login from './pages/LoginPage/Login.jsx'
 import SignUp from './pages/SignUpPage/SignUp.jsx'
 import AiAssist from './pages/AiAssistPage/AiAssist.jsx'
+import { AuthProvider } from "./context/AuthContext.jsx";
+import { Toaster } from 'react-hot-toast'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -20,7 +22,7 @@ const router = createBrowserRouter([{
     element: <Home />
   },
   {
-    path: 'quiz',
+    path: 'quiz/:id',
     element: <Quiz />
   },
   {
@@ -52,6 +54,9 @@ const router = createBrowserRouter([{
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router}></RouterProvider>
+      <Toaster></Toaster>
+    </AuthProvider>
   </StrictMode>,
 )

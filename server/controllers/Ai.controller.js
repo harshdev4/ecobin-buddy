@@ -24,7 +24,7 @@ function extractJsonString(text) {
     return jsonMatch[1].trim();
   }
   return text.trim();
-}
+} 
 
 export const analyseImage = async (req, res) => {
       try {

@@ -75,6 +75,7 @@
     border-radius: 20px;
     padding: 8px 12px;
     color: var(--color-primary-700);
+    cursor: pointer;
 }
 
 .headerSignBtn {

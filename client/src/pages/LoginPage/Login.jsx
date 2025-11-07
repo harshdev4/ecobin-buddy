@@ -3,26 +3,37 @@ import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
 import { IoIosEye, IoIosEyeOff } from 'react-icons/io';
 import {axiosInstance} from '../../utils/axiosInstance'
+import Loader from '../../components/Loader/Loader';
+import { useAuth } from '../../context/AuthContext';
+import toast from 'react-hot-toast';
 
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [isPassVisible, setIsPassVisible] = useState(false);
+  const {user, setUser, loading, setLoading} = useAuth();
+  
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
     try {
       const res = await axiosInstance.post('/login', formData);
-      console.log(res.data.user);
+      setUser(res.data.user);
+      toast.success("Logged in successfully");
     } catch (error) {
       console.log(error);
+      toast.error("Something went wrong");
+    } finally{
+      setLoading(false);
     }
   };
 
   return (
     <div className={styles.container}>
+      {loading && <Loader/>}
       <h1 className={styles.logo}>EcoBin <span>Buddy</span></h1>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h2>Welcome Back</h2>

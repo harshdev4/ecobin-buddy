@@ -3,11 +3,13 @@ import styles from './Identify.module.css'
 import { axiosInstance } from '../../utils/axiosInstance'
 import Loader from '../../components/Loader/Loader'
 import { ImBin } from "react-icons/im";
+import { useAuth } from '../../context/AuthContext';
 
 const Identify = () => {
   const imageInputRef = useRef(null)
   const uploadedImageRef = useRef(null)
-  const dragContentImageRef = useRef(null)
+  const dragContentImageRef = useRef(null);
+  const {user} = useAuth();
 
   const [imagePreview, setImagePreview] = useState(null);
   const [file, setFile] = useState(null);

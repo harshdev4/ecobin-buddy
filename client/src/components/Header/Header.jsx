@@ -6,18 +6,21 @@ import { MdOutlineQuiz, MdOutlineTipsAndUpdates } from "react-icons/md";
 import { RiUserCommunityLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { useAuth } from '../../context/AuthContext';
 
 const Header = () => {
   const location = useLocation();
   const path = location.pathname;
   const mobileNavRef = useRef(null);
-
+  const {user, logout} = useAuth();
   const toggleMenu = () => {
     const menu = mobileNavRef.current;
     if (menu) {
       menu.classList.toggle(`${styles.toggleMenu}`);
     }
   }
+
+
 
   return (
     <header className={styles.header}>
@@ -31,8 +34,8 @@ const Header = () => {
             </Link>
           </li>
 
-          <li title='Quiz' className={`${styles.navLi} ${path == '/quiz' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="quiz" style={path == '/quiz' ? { color: 'white' } : undefined}>
+          <li title='Quiz' className={`${styles.navLi} ${path.includes('/quiz') && styles.activeLink}`}>
+            <Link className={styles.navLink} to={`quiz/${user?.id}`} style={path.includes('/quiz') ? { color: 'white' } : undefined}>
               <MdOutlineQuiz className={styles.navIcon} />
               <span>Quiz</span>
             </Link>
@@ -59,7 +62,7 @@ const Header = () => {
             </Link>
           </li>
 
-          <div className={styles.headerBtnWrapper}>
+          {!user ? <div className={styles.headerBtnWrapper}>
             <li title='Login' className={`${styles.navLi} ${styles.authLi}`}>
               <Link
                 className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLoginBtn}`}
@@ -77,7 +80,9 @@ const Header = () => {
                 Sign Up
               </Link>
             </li>
-          </div>
+          </div> :
+          <button className={`${styles.navLink} ${styles.headerAuthBtn}`} onClick={logout}>Logout</button>
+          }
 
         </ul>
       </nav>
@@ -92,8 +97,8 @@ const Header = () => {
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path == '/quiz' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="quiz" style={path == '/quiz' ? { color: 'white' } : undefined} onClick={toggleMenu}>
+          <li className={`${styles.navLi} ${path.includes('/quiz') && styles.activeLink}`}>
+            <Link className={styles.navLink} to={`quiz/${user?.id}`} style={path.includes('/quiz') ? { color: 'white' } : undefined} onClick={toggleMenu}>
               <MdOutlineQuiz className={styles.navIcon} />
               <span>Quiz</span>
             </Link>
@@ -120,7 +125,7 @@ const Header = () => {
             </Link>
           </li>
 
-          <div className={styles.mobileAuthBtnWrapper}>
+          {!user ? <div className={styles.mobileAuthBtnWrapper}>
             <li className={`${styles.navLi} ${styles.authLi}`}>
               <Link className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLoginBtn}`} to="login" onClick={toggleMenu}>
                 Login
@@ -133,6 +138,9 @@ const Header = () => {
               </Link>
             </li>
           </div>
+          :
+          <button className={`${styles.navLink} ${styles.headerAuthBtn}`} onClick={logout}>Logout</button>
+          }
 
         </ul>
       </nav>
