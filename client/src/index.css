@@ -16,7 +16,7 @@
     /* Neutral Colors (Gray - For backgrounds, borders, and text) */
     --color-white: #ffffff;
     --color-bg-light: #f3f4f6; /* Used for main screen background */
-    --color-bg-darker: #e5e7eb;
+    --color-bg-darker: #ededed;
     --color-text-light: #6b7280; /* Gray-500 */
     --color-text-medium: #3a3b3b; /* Gray-500 */
     --color-text-dark: #1f2937;   /* Gray-800, main text */
@@ -38,7 +38,6 @@
 
 /* Ensure the body uses the defined font */
 body {
-    background-color: var(--color-bg-light);
-    background-image: url('/images/body.png');
+    background-color: var(--color-white);
     color: var(--color-text-dark);
 }

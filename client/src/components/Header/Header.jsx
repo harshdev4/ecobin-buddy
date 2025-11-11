@@ -81,7 +81,7 @@ const Header = () => {
               </Link>
             </li>
           </div> :
-          <button className={`${styles.navLink} ${styles.headerAuthBtn}`} onClick={logout}>Logout</button>
+          <button className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLogoutBtn}`} onClick={logout}>Logout</button>
           }
 
         </ul>
@@ -139,7 +139,7 @@ const Header = () => {
             </li>
           </div>
           :
-          <button className={`${styles.navLink} ${styles.headerAuthBtn}`} onClick={logout}>Logout</button>
+          <button className={`${styles.navLink} ${styles.headerAuthBtn} ${styles.headerLogoutBtn}`} onClick={logout}>Logout</button>
           }
 
         </ul>

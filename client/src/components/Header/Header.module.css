@@ -96,6 +96,16 @@
     display: none;
 }
 
+.headerLogoutBtn{
+    background: var(--color-primary-600);
+    color: var(--color-white);
+    padding: 10px 20px;
+}
+
+.headerLogoutBtn:hover{
+    background: var(--color-primary-500);
+}
+
 @media (max-width: 499px){
     .logoContainer{
         width: 140px;
