@@ -57,12 +57,12 @@ const Home = () => {
           </div>
           <div className={`${styles.sectionCard} ${styles.aiWorkingCard}`}>
             <FaBrain className={styles.aiWorkIcon} />
-            <h3 className={styles.aiWorkHeading}>1. Upload Image</h3>
+            <h3 className={styles.aiWorkHeading}>2. AI Analysis</h3>
             <p className={`${styles.cardText} ${styles.aiWorkingText}`}>Our AI processes the image using advanced computer vision and machine learning.</p>
           </div>
           <div className={`${styles.sectionCard} ${styles.aiWorkingCard}`}>
             <FaTag className={styles.aiWorkIcon} />
-            <h3 className={styles.aiWorkHeading}>1. Upload Image</h3>
+            <h3 className={styles.aiWorkHeading}>3. Get Classification</h3>
             <p className={`${styles.cardText} ${styles.aiWorkingText}`}>Receive instant classification results with disposal instructions and tips.</p>
           </div>
         </div>

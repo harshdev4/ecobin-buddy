@@ -255,10 +255,10 @@
   border-radius: 14px;
   width: 100%;
   padding: 15px;
-  background-color: rgba(179, 163, 216, 0.5);
+  background-color: #a3a7d880;
 }
 
-.bottomIconDiv{
+.bottomIconDiv {
   gap: 5px;
 }
 
@@ -271,40 +271,40 @@
 
 .bottomHeading {
   font-size: 1rem;
-  color: #6a2fef;
+  color: #5e27dd;
   font-weight: 600;
 }
 
-.alternateSteps{
+.alternateSteps {
   padding: 15px 20px;
 }
 
-.alternateSteps > li{
+.alternateSteps>li {
   color: #7847ec;
 }
 
-.featuresDiv{
-  margin-top: 20px;
+.featuresDiv {
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 35px;
 }
 
-.resultFeatures{
+.resultFeatures {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.resultFeatureHeading{
+.resultFeatureHeading {
   font-size: 1.1rem;
-  color: #1a5d41;
+  color: #36a074;
 }
 
-.resultFeatureSubHeading{
+.resultFeatureSubHeading {
   font-size: 0.85rem;
-  color: #10754c;
+  color: #2fad7b;
 }
 
 .cleanSection {
@@ -320,7 +320,7 @@
 }
 
 @media (max-width: 599px) {
-  .section{
+  .section {
     padding: 20px 25px;
   }
 
@@ -329,20 +329,32 @@
   }
 
   .sectionHeading {
-    font-size: 1.22rem;
+    font-size: 1.5rem;
   }
 
   .sectionPara {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
-  .demoContent{
+  .demoContent {
     grid-template-columns: 1fr;
+  }
+
+  .featuresDiv {
+    justify-content: center;
   }
 
   .cleanImage {
     width: 60%;
+  }
+
+  .resultFeatureHeading {
+    font-size: 1.3rem;
+  }
+
+  .resultFeatureSubHeading {
+    font-size: 0.95rem;
   }
 }
 
@@ -360,7 +372,7 @@
     font-size: 0.85rem;
   }
 
-  .demoContent{
+  .demoContent {
     grid-template-columns: 1fr;
   }
 }
