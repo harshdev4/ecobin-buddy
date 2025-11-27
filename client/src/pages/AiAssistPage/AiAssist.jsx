@@ -17,6 +17,7 @@ const AiAssist = () => {
   const { user, loading, setLoading } = useAuth();
 
   useEffect(() => {
+    if (loading) return;
     if (!user) {
       navigate('/login');
     }

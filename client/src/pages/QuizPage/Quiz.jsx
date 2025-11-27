@@ -21,6 +21,7 @@ const Quiz = () => {
   const { user, loading, setLoading } = useAuth();
 
   useEffect(()=>{
+    if (loading) return;
     if (!user) {
       navigate('/login');
     }
@@ -53,6 +54,10 @@ const Quiz = () => {
       fetchScore();
     }
   }, [user?.id]);
+
+  useEffect(()=>{
+    setQuiz(quizArr[quesCount]);
+  }, [quesCount])
 
   const checkAnswer = async (quizId, optionId, e) => {
     if (!isAnswered) {
