@@ -1,6 +1,7 @@
 .quizPage{
     position: relative;
     padding: 20px 30px;
+    min-height: 100dvh;
 }
 
 .quizHeading{
@@ -8,8 +9,11 @@
     font-size: 2.3rem;
 }
 
-.scoreCount{
+.scoreCountContainer{
     position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 8px;
     top: 20px;
     right: 30px;
     font-weight: 500;
@@ -40,12 +44,12 @@
     padding: 10px 20px;
     border-radius: 50px;
     margin-bottom: 20px;
-    background: rgb(202, 201, 201);
+    background: rgb(226, 225, 225);
     cursor: pointer;;
 }
 
 .option:hover{
-    background: rgb(185, 185, 185);;
+    background: rgb(204, 203, 203);;
 }
 
 .correctAnswer, .correctAnswer:hover{

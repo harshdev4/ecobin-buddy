@@ -4,11 +4,13 @@ import { axiosInstance } from '../../utils/axiosInstance'
 import Loader from '../../components/Loader/Loader'
 import { ImBin } from "react-icons/im";
 import { useAuth } from '../../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const Identify = () => {
   const imageInputRef = useRef(null)
   const uploadedImageRef = useRef(null)
   const dragContentImageRef = useRef(null);
+  const navigate = useNavigate();
   const {user} = useAuth();
 
   const [imagePreview, setImagePreview] = useState(null);
@@ -74,6 +76,10 @@ const Identify = () => {
   }
 
   const handleSubmit = async () => {
+    if(!user){
+      navigate('/login');
+    }
+
     if (!file || !mimeType) {
       return;
     }

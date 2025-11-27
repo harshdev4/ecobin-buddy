@@ -4,6 +4,9 @@ import { Link, useOutletContext } from 'react-router-dom';
 import { IoChatbubbleOutline, IoCloudUploadOutline } from 'react-icons/io5';
 import { FaUpload, FaTag, FaCheck } from "react-icons/fa6";
 import { FaBrain, FaRecycle, FaLightbulb } from "react-icons/fa";
+import { IoAnalyticsOutline } from "react-icons/io5";
+import { BiCategory } from "react-icons/bi";
+import { Ri24HoursFill } from "react-icons/ri";
 
 const Home = () => {
   const { images } = useOutletContext();
@@ -109,9 +112,9 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.featuresDiv}>
-          <div className={styles.resultFeatures}><h3 className={styles.resultFeatureHeading}>95%+</h3><span className={styles.resultFeatureSubHeading}>Classification Accuracy</span></div>
-          <div className={styles.resultFeatures}><h3 className={styles.resultFeatureHeading}>50+</h3><span className={styles.resultFeatureSubHeading}>Waste Categories</span></div>
-          <div className={styles.resultFeatures}><h3 className={styles.resultFeatureHeading}>24/7</h3><span className={styles.resultFeatureSubHeading}>Available Service</span></div>
+          <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><IoAnalyticsOutline className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>95%</h3></div><span className={styles.resultFeatureSubHeading}>Accuracy</span></div>
+          <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><BiCategory className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>50+</h3></div><span className={styles.resultFeatureSubHeading}>Waste Categories</span></div>
+          <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><Ri24HoursFill className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>24/7</h3></div><span className={styles.resultFeatureSubHeading}>Available Service</span></div>
         </div>
       </section>
 

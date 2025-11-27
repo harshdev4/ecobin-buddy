@@ -4,12 +4,23 @@ import { BsArrowRight } from "react-icons/bs";
 import { axiosInstance } from '../../utils/axiosInstance.js'
 import TypingIndicator from '../../components/TypingIndicator/TypingIndicator.jsx';
 import Markdown from 'react-markdown'
+import { useAuth } from '../../context/AuthContext.jsx';
+import { useNavigate } from 'react-router-dom';
 
 const AiAssist = () => {
   const [messages, setMessages] = useState([]);
   const [userInput, setUserInput] = useState("");
   const [pending, setIsPending] = useState(false);
   const dummyDivRef = useRef(null);
+  const navigate = useNavigate(); 
+  
+  const { user, loading, setLoading } = useAuth();
+
+  useEffect(() => {
+    if (!user) {
+      navigate('/login');
+    }
+  }, []);
 
   const handleUserInput = (e) => {
     setUserInput(e.target.value);
@@ -35,7 +46,7 @@ const AiAssist = () => {
       const errorMsg = { text: "Something went wrong.", fromAi: true };
       setMessages((prev) => [...prev, errorMsg]);
     }
-    finally{
+    finally {
       setIsPending(false);
     }
   };
@@ -55,7 +66,7 @@ const AiAssist = () => {
           <p key={index} className={`${styles.chatMessage} ${message.fromAi ? styles.fromAI : styles.fromUser}`}><Markdown>{message.text}</Markdown></p>
         ))
         }
-        {pending && <TypingIndicator/>}
+        {pending && <TypingIndicator />}
         <div ref={dummyDivRef} className={styles.dummyDiv}></div>
       </div>
 

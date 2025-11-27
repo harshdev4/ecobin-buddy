@@ -4,6 +4,8 @@ import { useAuth } from '../../context/AuthContext';
 import { axiosInstance } from '../../utils/axiosInstance';
 import toast from 'react-hot-toast';
 import Loader from '../../components/Loader/Loader';
+import { GiStarMedal } from "react-icons/gi";
+import { useNavigate } from 'react-router-dom';
 
 const Quiz = () => {
   const [score, setScore] = useState(0);
@@ -13,8 +15,16 @@ const Quiz = () => {
   const [isCorrect, setIsCorrect] = useState(false);
   const [clickedOption, setClickedOption] = useState(null);
   const continueBtnRef = useRef(null);
+  const [quiz, setQuiz] = useState(null);
+  const navigate = useNavigate();
 
   const { user, loading, setLoading } = useAuth();
+
+  useEffect(()=>{
+    if (!user) {
+      navigate('/login');
+    }
+  }, []);
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -22,6 +32,7 @@ const Quiz = () => {
         setLoading(true);
         const res = await axiosInstance.get(`/fetch-quiz/${user?.id}`);
         setQuizArr(res.data);
+        setQuiz(res.data[quesCount]);
       } catch (error) {
         toast.error('Something went wrong!');
       } finally {
@@ -42,8 +53,6 @@ const Quiz = () => {
       fetchScore();
     }
   }, [user?.id]);
-
-  const quiz = quizArr[quesCount];
 
   const checkAnswer = async (quizId, optionId, e) => {
     if (!isAnswered) {
@@ -78,9 +87,9 @@ const Quiz = () => {
     setQuesCount(prev => prev + 1);
   };
 
-  if (loading) return <Loader />;
+  if (loading) return <div style={{minHeight: '100dvh'}}><Loader /></div>;
 
-  if (!quiz) {
+  if (!quiz && !loading) {
     return (
       <div className={styles.quizPage}>
         <h2>Quiz Completed!</h2>
@@ -92,7 +101,7 @@ const Quiz = () => {
   return (
     <div className={styles.quizPage}>
       <h2 className={styles.quizHeading}>Quiz</h2>
-      <h3 className={styles.scoreCount}>Present level: {score}</h3>
+      <h3 className={styles.scoreCountContainer} title='Score'><GiStarMedal /> <span className={styles.scoreCount}>{score}</span></h3>
 
       <div className={styles.quizArea}>
         <p className={styles.quizQues}>{quiz.question}</p>

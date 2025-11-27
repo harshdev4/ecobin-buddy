@@ -235,12 +235,12 @@
   padding: 10px;
   font-size: 2rem;
   color: white;
-  background-color: #1a5d41;
+  background-color: #318865;
 }
 
 .midHeading {
   font-size: 1rem;
-  color: #1a5d41;
+  color: #2d805e;
 }
 
 .disposalSteps {
@@ -255,7 +255,7 @@
   border-radius: 14px;
   width: 100%;
   padding: 15px;
-  background-color: #a3a7d880;
+  background-color: #a3afd880;
 }
 
 .bottomIconDiv {
@@ -266,12 +266,12 @@
   border-radius: 50%;
   padding: 10px;
   font-size: 2.5rem;
-  color: #6a2fef;
+  color: #4d5ac7;
 }
 
 .bottomHeading {
   font-size: 1rem;
-  color: #5e27dd;
+  color: #4d5ac7;
   font-weight: 600;
 }
 
@@ -280,7 +280,7 @@
 }
 
 .alternateSteps>li {
-  color: #7847ec;
+  color: #4d5ac7;
 }
 
 .featuresDiv {
@@ -288,23 +288,41 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 35px;
+  gap: 20px;
 }
 
-.resultFeatures {
+.featureIcon{
+  padding: 10px;
+  border-radius: 50%;
+  background-color: white;
+  font-size: 2.7rem;
+  color: #186d4b;
+}
+
+.resultFeaturesContainer {
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
+}
+
+.resultFeatureTop{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-self: center;
 }
 
 .resultFeatureHeading {
-  font-size: 1.1rem;
-  color: #36a074;
+  font-size: 1rem;
+  color: #186d4b;
+  font-weight: 500;
 }
 
 .resultFeatureSubHeading {
   font-size: 0.85rem;
-  color: #2fad7b;
+  color: #186d4b;
 }
 
 .cleanSection {
@@ -342,6 +360,7 @@
   }
 
   .featuresDiv {
+    column-gap: 55px;
     justify-content: center;
   }
 
@@ -350,7 +369,7 @@
   }
 
   .resultFeatureHeading {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
   }
 
   .resultFeatureSubHeading {
