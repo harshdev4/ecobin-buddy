@@ -145,4 +145,20 @@
   .card{
     padding: 0;
   }
+
+  .imageInfoDiv{
+    flex-direction: column;
+  }
+
+  .textarea{
+    height: 100px;
+  }
+
+  .imageFileContainer{
+    width: 186px;
+  }
+
+  .fileUploadText{
+    text-align: center;
+  }
 }
