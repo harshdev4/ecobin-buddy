@@ -1,0 +1,62 @@
+.card {
+  background: #ffffff; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 18px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  width: 100%;
+}
+ 
+.cardTextActionContainer{
+  width: 100%;
+  display: grid;
+  grid-template-rows: max-content auto;
+
+}
+
+.user {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.text {
+  margin-top: 6px;
+  color: #444;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.image {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1;
+  border-radius: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 20px;
+  margin-top: 12px;
+  color: #555;
+  align-self: flex-end;
+}
+
+.like,
+.comment {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.like:hover,
+.comment:hover {
+  color: #0e8a35;
+}
+
+@media (max-width: 599px){
+  .card{
+    padding: 0;
+  }
+}

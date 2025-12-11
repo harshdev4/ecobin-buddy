@@ -94,7 +94,27 @@ export const fetchScore = async (req, res) => {
     res.status(200).json(user.score);
   } catch (error) {
     console.log(error);
-    
+    res.status(500).json({message: "Something went wrong"});
+  }
+}
+
+export const fetchLevel = async (req, res) => {
+  try {
+    const {userId} = req.params;
+    const user = await User.findById(userId);
+    res.status(200).json(user.level);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({message: "Something went wrong"});
+  }
+}
+
+export const fetchUsersForLeaderBoard = async (req, res) => {
+  try {
+    const users = await User.find().sort({score: -1}).select('-password -tips');
+    res.status(200).json({users});
+  } catch (error) {
+    console.log(error);
     res.status(500).json({message: "Something went wrong"});
   }
 }

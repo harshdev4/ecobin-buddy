@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import styles from './Header.module.css';
 import { Link, useLocation } from 'react-router-dom';
 import { IoCloudUploadOutline, IoChatbubbleOutline } from "react-icons/io5";
-import { MdOutlineQuiz, MdOutlineTipsAndUpdates } from "react-icons/md";
+import { MdOutlineQuiz, MdOutlineLeaderboard } from "react-icons/md";
 import { RiUserCommunityLine } from "react-icons/ri";
 import { IoMdClose } from "react-icons/io";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -41,10 +41,10 @@ const Header = () => {
             </Link>
           </li>
 
-          <li title='Tips' className={`${styles.navLi} ${path == '/tips' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="tips" style={path == '/tips' ? { color: 'white' } : undefined}>
-              <MdOutlineTipsAndUpdates className={styles.navIcon} />
-              <span>Tips</span>
+          <li title='LeaderBoard' className={`${styles.navLi} ${path == '/leaderboard' && styles.activeLink}`}>
+            <Link className={styles.navLink} to="leaderboard" style={path == '/leaderboard' ? { color: 'white' } : undefined}>
+              <MdOutlineLeaderboard className={styles.navIcon} />
+              <span>LeaderBoard</span>
             </Link>
           </li>
 
@@ -104,10 +104,10 @@ const Header = () => {
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path == '/tips' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="tips" style={path == '/tips' ? { color: 'white' } : undefined} onClick={toggleMenu}>
-              <MdOutlineTipsAndUpdates className={styles.navIcon} />
-              <span>Tips</span>
+          <li className={`${styles.navLi} ${path == '/leaderboard' && styles.activeLink}`}>
+            <Link className={styles.navLink} to="leaderboard" style={path == '/leaderboard' ? { color: 'white' } : undefined} onClick={toggleMenu}>
+              <MdOutlineLeaderboard className={styles.navIcon} />
+              <span>LeaderBoard</span>
             </Link>
           </li>
 

@@ -118,7 +118,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.cleanSection}`}>
+      <section data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" className={`${styles.section} ${styles.cleanSection}`}>
         <img src="/images/clean.jpg" className={styles.cleanImage} />
       </section>
     </div>

@@ -106,11 +106,11 @@ const Identify = () => {
         <p className={styles.subheading}>
           Upload an image of waste and let AI identify its category.
         </p>
-
+ 
         {/* image uploading section */}
         <div className={styles.imageInfoDiv}>
           <div className={`${styles.imageFileContainer} ${styles.uploadedImageFileContainer}`}>
-            <input
+            <input 
               ref={imageInputRef}
               type="file"
               name="uploadedImage"

@@ -6,13 +6,13 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './pages/HomePage/Home.jsx'
 import Quiz from './pages/QuizPage/Quiz.jsx'
 import Identify from './pages/IdentifyPage/Identify.jsx'
-import Tips from './pages/TipPage/Tips.jsx'
 import Community from './pages/CommunityPage/Community.jsx'
 import Login from './pages/LoginPage/Login.jsx'
 import SignUp from './pages/SignUpPage/SignUp.jsx'
 import AiAssist from './pages/AiAssistPage/AiAssist.jsx'
 import { AuthProvider } from "./context/AuthContext.jsx";
 import { Toaster } from 'react-hot-toast'
+import LeaderBoard from './pages/LeaderBoardPage/LeaderBoard.jsx'
 
 const router = createBrowserRouter([{
   path: '/',
@@ -30,8 +30,8 @@ const router = createBrowserRouter([{
     element: <Identify />
   },
   {
-    path: 'tips',
-    element: <Tips />
+    path: 'leaderboard',
+    element: <LeaderBoard/>
   },
   {
     path: 'community',

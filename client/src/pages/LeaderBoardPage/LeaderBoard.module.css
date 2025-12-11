@@ -1,0 +1,66 @@
+.leaderBoardPage {
+    position: relative;
+    padding: 20px 30px;
+    min-height: 100dvh;
+}
+
+.pageHeading {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #244d3b;
+    margin-bottom: 0.5rem;
+}
+
+.userListContainer {
+    margin-top: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding: 0;
+    background: #ffffff;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.userList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user {
+    padding: 16px 20px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #e3e3e3;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.user:hover {
+    background: #efefef;
+    transform: translateX(4px);
+}
+
+.currentUser {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    color: white;
+    font-weight: 600;
+    border-bottom: none;
+    transform: none;
+}
+
+.currentUser:hover {
+    background: linear-gradient(135deg, #4caf50, #2e7d32);
+    transform: none;
+}
+
+@media (max-width: 599px){
+    .leaderBoardPage{
+        padding: 20px 10px;
+    }
+}

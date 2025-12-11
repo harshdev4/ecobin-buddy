@@ -6,12 +6,30 @@
 
 .quizHeading{
     text-align: center;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #244d3b;
+    margin-bottom: 0.5rem;
+}
+
+.userQuizData{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.levelHeading{
+    font-weight: 600;
+} 
+
+.level{
+    font-weight: 500;
 }
 
 .scoreCountContainer{
-    position: absolute;
+    margin: 15px 0;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 8px;
     top: 20px;
@@ -62,6 +80,14 @@
     color: white;
 }
 
+.correct{
+    font-weight: 500;
+    background: linear-gradient(to right, #4CAF50, #a3e0a5);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
 .continueBtn{
     border: 0;
     outline: 0;
@@ -77,6 +103,9 @@
 }
 
 @media (max-width: 599px){
+    .quizPage{
+        padding: 20px 10px;
+    }
     .quizArea{
         width: 100%;
     }

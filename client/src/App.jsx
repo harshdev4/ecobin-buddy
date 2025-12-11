@@ -3,6 +3,8 @@ import { Outlet, useLocation, useNavigate } from 'react-router-dom'
 import Header from './components/Header/Header.jsx'
 import { useAuth } from './context/AuthContext.jsx';
 import Footer from './components/Footer/Footer.jsx';
+import AosConfig from './components/AosConfig/AOSCONFIG.jsx';
+import "aos/dist/aos.css";
 
 const App = () => {
   const [images, setImages] = useState(["https://res.cloudinary.com/dpam1gove/image/upload/v1762451421/hero-3_d3jzns.webp", "https://res.cloudinary.com/dpam1gove/image/upload/v1762451420/hero-1_ruwwf1.webp", "https://res.cloudinary.com/dpam1gove/image/upload/v1762451419/hero-2_xvgsq9.jpg"]);
@@ -36,6 +38,7 @@ const App = () => {
   return (
     <>
       <Header></Header>
+      <AosConfig/>
       <Outlet context={{ images }}></Outlet>
       {location.pathname !== '/ai-chat' && <Footer></Footer>}
     </>

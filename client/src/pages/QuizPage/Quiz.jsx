@@ -9,10 +9,12 @@ import { useNavigate } from 'react-router-dom';
 
 const Quiz = () => {
   const [score, setScore] = useState(0);
+  const [level, setLevel] = useState("Easy");
   const [quizArr, setQuizArr] = useState([]);
   const [quesCount, setQuesCount] = useState(0);
   const [isAnswered, setIsAnswered] = useState(false);
-  const [isCorrect, setIsCorrect] = useState(false);
+  const [isCorrect, setIsCorrect] = useState(null);
+  const [answer, setAnswer] = useState("fdsfds");
   const [clickedOption, setClickedOption] = useState(null);
   const continueBtnRef = useRef(null);
   const [quiz, setQuiz] = useState(null);
@@ -43,8 +45,16 @@ const Quiz = () => {
     const fetchScore = async () => {
       try {
         const res = await axiosInstance.get(`/fetchScore/${user?.id}`);
-        console.log(res.data);
         setScore(res.data);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
+    const fetchLevel = async () => {
+      try {
+        const res = await axiosInstance.get(`/fetchLevel/${user?.id}`);
+        setLevel(res.data);
       } catch (error) {
         console.log(error);
       }
@@ -52,6 +62,7 @@ const Quiz = () => {
     if (user?.id) {
       fetchQuiz();
       fetchScore();
+      fetchLevel();
     }
   }, [user?.id]);
 
@@ -77,6 +88,8 @@ const Quiz = () => {
           
         }
       } else {
+        setIsCorrect(false);
+        setAnswer(quiz.answer.text);
         e.target.classList.add(styles.wrongAnswer);
         continueBtn?.classList.add(styles.wrongAnswer);
       }
@@ -87,7 +100,8 @@ const Quiz = () => {
     clickedOption?.classList.remove(styles.correctAnswer, styles.wrongAnswer);
     continueBtnRef.current?.classList.remove(styles.correctAnswer, styles.wrongAnswer);
     setIsAnswered(false);
-    setIsCorrect(false);
+    setIsCorrect(null);
+    setAnswer("");
     setClickedOption(null);
     setQuesCount(prev => prev + 1);
   };
@@ -97,17 +111,20 @@ const Quiz = () => {
   if (!quiz && !loading) {
     return (
       <div className={styles.quizPage}>
-        <h2>Quiz Completed!</h2>
+        <h2>Level Increased</h2>
         <h3>Your final score: {score}</h3>
       </div>
     );
   }
-
+ 
   return (
     <div className={styles.quizPage}>
       <h2 className={styles.quizHeading}>Quiz</h2>
-      <h3 className={styles.scoreCountContainer} title='Score'><GiStarMedal /> <span className={styles.scoreCount}>{score}</span></h3>
-
+      <div className={styles.userQuizData}>
+        <h3 className={styles.levelHeading}>Level: <span className={styles.level}>{level.slice(0,1).toUpperCase()+level.slice(1)}</span></h3>
+        <h3 className={styles.scoreCountContainer} title='Score'><GiStarMedal /> <span className={styles.scoreCount}>{score}</span></h3>
+      </div>
+ 
       <div className={styles.quizArea}>
         <p className={styles.quizQues}>{quiz.question}</p>
         <ul className={styles.optionContainerUl}>
@@ -121,6 +138,10 @@ const Quiz = () => {
             </li>
           ))}
         </ul>
+
+        {
+          isCorrect===false && <h3 className={styles.correct}>{answer}</h3>
+        }
 
         {isAnswered && (
           <button

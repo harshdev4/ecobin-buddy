@@ -60,7 +60,14 @@ const AiAssist = () => {
 
   return (
     <div className={styles.aiAssistPage}>
-      <h1 className={styles.mainHeading}><span className={styles.mainHeadingSpan}>Eco </span>Chat Assistant</h1>
+      
+      {
+        messages.length === 0 && 
+        <div className={styles.aiCenterTextContainer}>
+          <span className={styles.aiCenterText}>Hello, <span style={{fontWeight: 700, color: '#059669'}}>there</span></span>
+          <span className={styles.aiCenterText}>How can I help you?</span>
+        </div>
+      }
 
       <div className={styles.chatArea}>
         {messages.length > 0 && messages.map((message, index) => (

@@ -1,0 +1,148 @@
+.card {
+  background: #ffffff;
+  width: 90%;
+  max-width: 750px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 25px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d1d1;
+  outline: none;
+  resize: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.upload {
+  display: block;
+  margin-top: 14px;
+  color: #256147;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.hidden {
+  display: none;
+}
+
+.postBtn {
+  margin-top: 15px;
+  background: #244d3b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  float: right;
+}
+
+.imageInfoDiv {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.imageFileContainer {
+  background: white;
+  border: 2px dashed #a7c4b5;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.imageFileContainer:hover {
+  border-color: #6ec89a;
+}
+
+.dragContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #6a8b7b;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  padding: 1rem;
+}
+
+.dragActive {
+  background: #e3f2eb;
+  border: 2px solid #6ec89a;
+}
+
+.fileUploadText {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.fileUploadTextOR {
+  margin: 0.6rem 0;
+  font-size: 0.9rem;
+  color: #7b8f85;
+}
+
+.addFile {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  background: #58b992;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.addFile:hover {
+  background: #4aa883;
+  transform: scale(1.05);
+}
+
+.imageInput {
+  display: none;
+}
+
+/* ---------------- Image Preview ---------------- */
+.previewImageContainer {
+  width: 100%;
+  display: flex;
+}
+
+.uploadedImage {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.uploadedImage:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 599px){
+  .card{
+    padding: 0;
+  }
+}

@@ -1,21 +1,19 @@
 .aiAssistPage{
+    display: flex;
+    flex-direction: column;
 }
 
-.mainHeading{
-    text-align: center;
-    padding: 15px;
-    font-weight: 500;
-    font-size: 1.8rem;
-    position: sticky;
-    background-color: #d7e6d3;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.048);
-    top: 0;
+.aiCenterTextContainer{
     width: 100%;
-    z-index: 2;
+    height: 450px;
+    display: grid;
+    place-content: center;
+    padding: 10px 20px;
 }
 
-.mainHeadingSpan{
-    color: #58b992;
+.aiCenterText{
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
 .chatArea{
@@ -84,10 +82,6 @@
 }
 
 @media (max-width:599px){
-    .mainHeading{
-        font-size: 1.5rem;
-        padding: 10px;
-    }
     .chatMessage{
        max-width: 80%;
     }

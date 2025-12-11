@@ -8,6 +8,7 @@ import UserRouter from './routes/User.routes.js';
 import AiRouter from './routes/Ai.routes.js';
 import connectDB from './configs/db.config.js';
 import cookieParser from 'cookie-parser';
+import PostRouter from './routes/Post.routes.js';
 
 dotenv.config();
 
@@ -33,6 +34,7 @@ const upload = multer({
 
 app.use('/api', UserRouter);
 app.use('/api', AiRouter);
+app.use('/api', PostRouter);
 
 
 if (process.env.NODE_ENV === 'production') {

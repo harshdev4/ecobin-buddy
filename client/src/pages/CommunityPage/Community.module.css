@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 30px;
+}
+
+.heading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #244d3b;
+  margin-bottom: 0.5rem;
+}
+
+.subheading {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #6b6b6b;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.feed {
+  width: 90%;
+  max-width: 750px;
+  margin-top: 15px;
+}
+
+@media (max-width: 599px){
+  .container{
+    padding: 20px 10px;
+  }
+}
