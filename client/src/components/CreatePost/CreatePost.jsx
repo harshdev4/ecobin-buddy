@@ -3,25 +3,29 @@ import styles from "./CreatePost.module.css";
 import { useAuth } from "../../context/AuthContext";
 import { axiosInstance } from "../../utils/axiosInstance";
 import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
 
-const CreatePost = ({ addPost, fetchPosts}) => {
+const CreatePost = ({ addPost, fetchPosts }) => {
   const [text, setText] = useState("");
   const imageInputRef = useRef(null)
   const uploadedImageRef = useRef(null)
   const dragContentImageRef = useRef(null);
-  const navigate = useNavigate(); 
-  
+  const navigate = useNavigate();
+
   const { user, loading, setLoading } = useAuth();
 
   const [imagePreview, setImagePreview] = useState(null);
   const [file, setFile] = useState(null);
 
   const handlePost = async () => {
-    if(!user){
+    if (!user) {
       navigate('/login');
     }
 
-    if (!text && !file) return;
+    if (!text || !file) {
+      toast.error("All fields are required");
+      return;
+    }
 
     setText("");
     setImagePreview(null);
@@ -38,7 +42,7 @@ const CreatePost = ({ addPost, fetchPosts}) => {
     } catch (error) {
       console.log(error);
     }
-    finally{
+    finally {
       setLoading(false);
     }
 
@@ -109,15 +113,6 @@ const CreatePost = ({ addPost, fetchPosts}) => {
                 alt="Uploaded"
                 className={styles.uploadedImage}
               />
-              {/* <div className={styles.imageBtnWrapper}>
-                <button
-                  type="button"
-                  className={`${styles.button} ${styles.changeImageButton}`}
-                  onClick={handleBrowseImage}
-                >
-                  Change Image
-                </button>
-              </div> */}
             </div>
           ) : (
             <div
@@ -147,7 +142,16 @@ const CreatePost = ({ addPost, fetchPosts}) => {
         />
       </div>
 
+      <div className={styles.btnWrapper}>
+      <button
+        type="button"
+        className={`${styles.button} ${styles.changeImageButton}`}
+        onClick={handleBrowseImage}
+      >
+        Change Image
+      </button>
       <button className={styles.postBtn} onClick={handlePost}>Post</button>
+      </div>
     </div>
   );
 };

@@ -38,6 +38,7 @@ const Community = () => {
 
       <CreatePost addPost={addPost} fetchPosts={fetchPosts}/>
 
+      <div className={styles.lineBreak}/>
       <div className={styles.feed}>
         {posts.map((post) => (
           <PostCard key={post.id} post={post} />

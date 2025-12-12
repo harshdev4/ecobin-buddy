@@ -37,15 +37,36 @@
   display: none;
 }
 
-.postBtn {
+.btnWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 15px;
+}
+
+.changeImageButton{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  color: #244d3b;
+  border: 1px solid #244d3b;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.changeImageButton:hover{
+  background-color: #244d3b;
+  color: #ffffff;
+}
+
+.postBtn {
   background: #244d3b;
   color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
   cursor: pointer;
-  float: right;
 }
 
 .imageInfoDiv {
