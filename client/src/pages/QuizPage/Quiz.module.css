@@ -111,9 +111,14 @@
 }
 
 @media (max-width: 599px){
+    .afterEffect{
+        width: 70%;
+    }
+
     .quizPage{
         padding: 20px 10px;
     }
+    
     .quizArea{
         width: 100%;
     }
