@@ -34,7 +34,7 @@ const Login = () => {
   return (
     <div className={styles.container}>
       {loading && <Loader/>}
-      <h1 className={styles.logo}>EcoBin <span>Buddy</span></h1>
+      <img className={styles.logo} src='/images/logo-icon.png'/>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h2>Welcome Back</h2>
         <input

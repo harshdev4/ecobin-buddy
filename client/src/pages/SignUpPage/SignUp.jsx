@@ -35,7 +35,7 @@ const Signup = () => {
   return (
     <div className={styles.container}>
       {loading && <Loader></Loader>}
-      <h1 className={styles.logo}>EcoBin <span>Buddy</span></h1>
+      <img className={styles.logo} src='/images/logo-icon.png'/>
       <form className={styles.form} onSubmit={handleSubmit}>
         <h2>Create Account</h2>
         <input

@@ -18,7 +18,6 @@ export const submitPost = async (req, res) => {
 export const fetchPost = async (req, res) => {
     try {
         const posts = await Post.find().sort({createdAt: -1}).populate('author', 'name');
-        console.log(posts);
         return res.status(200).json({posts});
     } catch (error) {
         console.log(error);

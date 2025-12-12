@@ -8,14 +8,9 @@
 }
 
 .logo {
-    font-size: 2.2rem;
-    margin-bottom: 1rem;
-    color: #1b4332;
+    width: 100%;
+    max-width: 80px;
     font-weight: 700;
-}
-
-.logo span {
-    color: #2d6a4f;
 }
 
 .form {
@@ -30,7 +25,9 @@
 }
 
 .form h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    font-weight: 500;
     color: #1b4332;
     text-align: center;
 }
@@ -68,7 +65,7 @@
     border-radius: 0;
 }
 
-.eyeIcon{
+.eyeIcon {
     font-size: 1.2rem;
     cursor: pointer;
 }

@@ -15,7 +15,7 @@ const LeaderBoard = () => {
     useEffect(() => {
         if (!user) {
             if (loading) return;
-            navigate('/login');
+            navigate('/login'); 
         }
     }, [user, loading]);
 
@@ -43,12 +43,12 @@ const LeaderBoard = () => {
                 loading ? <Loader /> : user &&
                     <div className={styles.userListContainer}>
                         <ul className={styles.userList}>
-                            {users.map((u) => (
+                            {users.map((u, index) => (
                                 <li
                                     key={u._id}
                                     className={`${styles.user} ${u._id === user.id ? styles.currentUser : ''}`}
                                 >
-                                    {u.name} — {u.score}
+                                    {index + 1}. {u.name} — {u.score}
                                 </li>
                             ))}
                         </ul>

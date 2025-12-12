@@ -13,7 +13,7 @@ const Home = () => {
   const [bgImage, setBgImage] = useState(images[0]);
   const indexRef = useRef(0);
 
-  useEffect(() => {
+  useEffect(() => { 
     const changeBg = setInterval(() => {
       setBgImage(images[indexRef.current])
       if (indexRef.current < 2) {
@@ -112,7 +112,7 @@ const Home = () => {
           </div>
         </div>
         <div className={styles.featuresDiv}>
-          <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><IoAnalyticsOutline className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>95%</h3></div><span className={styles.resultFeatureSubHeading}>Accuracy</span></div>
+          <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><IoAnalyticsOutline className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>94%</h3></div><span className={styles.resultFeatureSubHeading}>Accuracy</span></div>
           <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><BiCategory className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>50+</h3></div><span className={styles.resultFeatureSubHeading}>Waste Categories</span></div>
           <div className={styles.resultFeaturesContainer}><div className={styles.resultFeatureTop}><Ri24HoursFill className={styles.featureIcon} /><h3 className={styles.resultFeatureHeading}>24/7</h3></div><span className={styles.resultFeatureSubHeading}>Available Service</span></div>
         </div>

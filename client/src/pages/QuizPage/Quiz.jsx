@@ -6,9 +6,12 @@ import toast from 'react-hot-toast';
 import Loader from '../../components/Loader/Loader';
 import { GiStarMedal } from "react-icons/gi";
 import { useNavigate } from 'react-router-dom';
+import correctAnim from '../../animations/Confetti.json'
+import wrongAnim from '../../animations/Error animation.json'
+import Lottie from "lottie-react";
 
 const Quiz = () => {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(0); 
   const [level, setLevel] = useState("Easy");
   const [quizArr, setQuizArr] = useState([]);
   const [quesCount, setQuesCount] = useState(0);
@@ -18,6 +21,7 @@ const Quiz = () => {
   const [clickedOption, setClickedOption] = useState(null);
   const continueBtnRef = useRef(null);
   const [quiz, setQuiz] = useState(null);
+  const [show, setShow] = useState(true);
   const navigate = useNavigate();
 
   const { user, loading, setLoading } = useAuth();
@@ -76,7 +80,7 @@ const Quiz = () => {
       setIsAnswered(true);
       const continueBtn = continueBtnRef.current;
       const answerId = quiz.answer.id;
-
+      setShow(true);
       if (answerId === optionId) {
         setIsCorrect(true);
         setScore(prev => prev + 5);
@@ -124,6 +128,10 @@ const Quiz = () => {
         <h3 className={styles.levelHeading}>Level: <span className={styles.level}>{level.slice(0,1).toUpperCase()+level.slice(1)}</span></h3>
         <h3 className={styles.scoreCountContainer} title='Score'><GiStarMedal /> <span className={styles.scoreCount}>{score}</span></h3>
       </div>
+
+      {(isCorrect && show )&& <Lottie animationData={correctAnim} loop={false} onComplete={()=> setShow(false)} className={styles.afterEffect}/>}
+
+      {(isCorrect === false && show) && <Lottie animationData={wrongAnim} loop={false} onComplete={()=> setShow(false)} className={styles.afterEffect}/>}
  
       <div className={styles.quizArea}>
         <p className={styles.quizQues}>{quiz.question}</p>
