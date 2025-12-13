@@ -25,7 +25,7 @@ const Login = () => {
       toast.success("Logged in successfully");
     } catch (error) {
       console.log(error);
-      toast.error("Something went wrong");
+      toast.error(error.response.data.message);
     } finally{
       setLoading(false);
     }

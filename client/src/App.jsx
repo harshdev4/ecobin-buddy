@@ -8,8 +8,6 @@ import "aos/dist/aos.css";
 import Loader from './components/Loader/Loader.jsx';
 
 const App = () => {
-  const [images, setImages] = useState(["https://res.cloudinary.com/dpam1gove/image/upload/v1762451421/hero-3_d3jzns.webp", "https://res.cloudinary.com/dpam1gove/image/upload/v1762451420/hero-1_ruwwf1.webp", "https://res.cloudinary.com/dpam1gove/image/upload/v1762451419/hero-2_xvgsq9.jpg"]);
-
   const { user, loading, urlLocation} = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
@@ -29,7 +27,7 @@ const App = () => {
       {loading && <Loader></Loader>}
       <Header></Header>
       <AosConfig/>
-      <Outlet context={{ images }}></Outlet>
+      <Outlet></Outlet>
       {location.pathname !== '/ai-chat' && <Footer></Footer>}
     </>
   )

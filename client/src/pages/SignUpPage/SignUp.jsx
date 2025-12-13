@@ -5,6 +5,7 @@ import { IoIosEye, IoIosEyeOff } from "react-icons/io";
 import {axiosInstance} from '../../utils/axiosInstance'
 import { useAuth } from '../../context/AuthContext';
 import Loader from '../../components/Loader/Loader'
+import toast from 'react-hot-toast';
 
 const Signup = () => {
   const [formData, setFormData] = useState({ name: '', email: '', password: '' });
@@ -25,7 +26,7 @@ const Signup = () => {
       toast.success("Signed in successfully");
     } catch (error) {
       console.log(error);
-      toast.error("Something went wrong");
+      toast.error(error.response.data.message);
     }
     finally{
       setLoading(false);

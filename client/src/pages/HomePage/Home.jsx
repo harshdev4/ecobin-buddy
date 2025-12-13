@@ -10,14 +10,14 @@ import { Ri24HoursFill } from "react-icons/ri";
 import { useAuth } from '../../context/AuthContext';
 
 const Home = () => {
-  const { images } = useOutletContext();
+  const [ images, setImages] = useState(['/images/hero-1.jpg', '/images/hero-2.jpg', '/images/hero-3.jpg']);
   const [bgImage, setBgImage] = useState(images[0]);
   const indexRef = useRef(0);
   const {setUrlLocation} = useAuth();
   
   useEffect(() => { 
     setUrlLocation("/");
-    const changeBg = setInterval(() => {
+    const changeBg = setInterval(() => { 
       setBgImage(images[indexRef.current])
       if (indexRef.current < 2) {
         indexRef.current++;

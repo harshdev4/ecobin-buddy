@@ -1,5 +1,5 @@
 import express from 'express';
-import { attemptQuiz, fetchLevel, fetchScore, fetchUsersForLeaderBoard, getUnattemptedQuiz, login, logout, signup } from '../controllers/User.controller.js';
+import { attemptQuiz, fetchLevel, fetchScore, fetchUsersForLeaderBoard, getUnattemptedQuiz, levelUp, login, logout, signup } from '../controllers/User.controller.js';
 import { verifyToken } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
@@ -7,6 +7,7 @@ const router = express.Router();
 router.post("/signup", signup);
 router.post("/login", login);
 router.post("/logout", logout);
+router.post("/level-up", verifyToken, levelUp);
 router.get("/fetchScore/:userId", verifyToken, fetchScore);
 router.get("/fetchLevel/:userId", verifyToken, fetchLevel);
 router.get("/fetchUsersForLeaderBoard/", verifyToken, fetchUsersForLeaderBoard);
