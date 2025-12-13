@@ -8,6 +8,8 @@ import Loader from "../../components/Loader/Loader.jsx";
 
 const Community = () => {
   const [posts, setPosts] = useState([]);
+  const {setUrlLocation} = useAuth();
+  
   const fetchPosts = async () => {
     try {
       const res = await axiosInstance.get('/fetch-posts');
@@ -20,6 +22,7 @@ const Community = () => {
   const {loading} = useAuth();
 
   useEffect(() => {
+    setUrlLocation("community");
     fetchPosts();
   }, []);
 

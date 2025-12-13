@@ -7,13 +7,16 @@ import { FaBrain, FaRecycle, FaLightbulb } from "react-icons/fa";
 import { IoAnalyticsOutline } from "react-icons/io5";
 import { BiCategory } from "react-icons/bi";
 import { Ri24HoursFill } from "react-icons/ri";
+import { useAuth } from '../../context/AuthContext';
 
 const Home = () => {
   const { images } = useOutletContext();
   const [bgImage, setBgImage] = useState(images[0]);
   const indexRef = useRef(0);
-
+  const {setUrlLocation} = useAuth();
+  
   useEffect(() => { 
+    setUrlLocation("/");
     const changeBg = setInterval(() => {
       setBgImage(images[indexRef.current])
       if (indexRef.current < 2) {

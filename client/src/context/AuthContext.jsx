@@ -7,6 +7,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [urlLocation, setUrlLocation] = useState("/");
     // 🔹 Check if logged in (auto-login)
     useEffect(() => {
         const checkAuth = async () => {
@@ -30,17 +31,19 @@ export const AuthProvider = ({ children }) => {
     // 🔹 Logout
     const logout = async () => {
         try {
+            setLoading(true);
             const res = await axiosInstance.post("/logout");
             setUser(null);
             toast.success("Logout successfully");
         } catch (error) {
-            console.log("something went wrong");
             toast.error("Something went wrong");
+        }finally{
+            setLoading(false);
         }
     };
 
     return (
-        <AuthContext.Provider value={{ user, setUser, loading, setLoading, logout }}>
+        <AuthContext.Provider value={{ user, setUser, loading, setLoading, logout, urlLocation, setUrlLocation}}>
             {children}
         </AuthContext.Provider>
     );

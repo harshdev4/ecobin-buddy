@@ -11,13 +11,17 @@ const Identify = () => {
   const uploadedImageRef = useRef(null)
   const dragContentImageRef = useRef(null);
   const navigate = useNavigate();
-  const {user} = useAuth();
+  const {user, setUrlLocation} = useAuth();
 
   const [imagePreview, setImagePreview] = useState(null);
   const [file, setFile] = useState(null);
   const [mimeType, setMimeType] = useState(null);
   const [pending, setIsPending] = useState(false);
   const [result, setResult] = useState(null);
+
+  useEffect(()=>{
+    setUrlLocation("analyse-image");
+  }, []);
 
   const colorMap = {
     blue: '#3B82F6',   // Tailwind bg-blue-500

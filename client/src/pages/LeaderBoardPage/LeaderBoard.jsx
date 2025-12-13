@@ -7,12 +7,13 @@ import Loader from '../../components/Loader/Loader.jsx';
 import { useNavigate } from 'react-router-dom';
 
 const LeaderBoard = () => {
-    const { user, loading, setLoading } = useAuth();
+    const { user, loading, setLoading, setUrlLocation} = useAuth();
     const [users, setUsers] = useState([]);
     const navigate = useNavigate();
 
 
     useEffect(() => {
+        setUrlLocation("leaderboard");
         if (!user) {
             if (loading) return;
             navigate('/login'); 
@@ -27,7 +28,7 @@ const LeaderBoard = () => {
 
                 setUsers(res.data.users || []);
             } catch (error) {
-                toast.error('Something went wrong!');
+                toast.error('Error fetching leaderboard data');
             } finally {
                 setLoading(false);
             }

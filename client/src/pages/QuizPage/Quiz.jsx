@@ -24,14 +24,15 @@ const Quiz = () => {
   const [show, setShow] = useState(true);
   const navigate = useNavigate();
 
-  const { user, loading, setLoading } = useAuth();
+  const { user, loading, setLoading, setUrlLocation} = useAuth();
 
   useEffect(()=>{
+    setUrlLocation("quiz");
     if (loading) return;
     if (!user) {
       navigate('/login');
     }
-  }, []);
+  }, [user]);
 
   useEffect(() => {
     const fetchQuiz = async () => {
@@ -41,7 +42,7 @@ const Quiz = () => {
         setQuizArr(res.data);
         setQuiz(res.data[quesCount]);
       } catch (error) {
-        toast.error('Something went wrong!');
+        toast.error('Failed to fetch the quiz');
       } finally {
         setLoading(false);
       }

@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 const Login = () => {
   const [formData, setFormData] = useState({ email: '', password: '' });
   const [isPassVisible, setIsPassVisible] = useState(false);
-  const {user, setUser, loading, setLoading} = useAuth();
+  const {user, setUser, loading, setLoading, urlLocation} = useAuth();
   
   const handleChange = (e) => {
     setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));

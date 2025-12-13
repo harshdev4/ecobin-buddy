@@ -14,14 +14,15 @@ const AiAssist = () => {
   const dummyDivRef = useRef(null);
   const navigate = useNavigate(); 
   
-  const { user, loading, setLoading } = useAuth();
+  const { user, loading, setLoading, setUrlLocation} = useAuth();
 
   useEffect(() => {
+    setUrlLocation("ai-chat");
     if (loading) return;
     if (!user) {
       navigate('/login');
     }
-  }, []);
+  }, [user]);
 
   const handleUserInput = (e) => {
     setUserInput(e.target.value);
