@@ -90,38 +90,38 @@ const Header = () => {
       <nav ref={mobileNavRef} className={`${styles.navContainer} ${styles.mobileNav}`}>
         <IoMdClose className={styles.closeMobileNavIcon} onClick={toggleMenu} />
         <ul className={styles.navUl}>
-          <li className={`${styles.navLi} ${path == '/analyse-image' && styles.activeLink}`}>
-            <Link className={styles.navLink} style={path == '/analyse-image' ? { color: 'white' } : undefined} to="analyse-image" onClick={toggleMenu}>
-              <IoCloudUploadOutline className={styles.navIcon} />
-              <span>Identify Waste</span>
+          <li className={`${styles.navLi}`}>
+            <Link className={styles.navLinkContainer} style={path == '/analyse-image' ? { color: 'white' } : undefined} to="analyse-image" onClick={toggleMenu}>
+              <div className={`${styles.navLink} ${styles.mobileNavLink} ${path == '/analyse-image' && styles.activeLink}`}><IoCloudUploadOutline className={styles.navIcon} />
+              <span>Identify Waste</span></div>
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path.includes('/quiz') && styles.activeLink}`}>
-            <Link className={styles.navLink} to={`quiz/${user?.id}`} style={path.includes('/quiz') ? { color: 'white' } : undefined} onClick={toggleMenu}>
-              <MdOutlineQuiz className={styles.navIcon} />
-              <span>Quiz</span>
+          <li className={`${styles.navLi}`}>
+            <Link className={styles.navLinkContainer} to={`quiz/${user?.id}`} style={path.includes('/quiz') ? { color: 'white' } : undefined} onClick={toggleMenu}>
+              <div className={`${styles.navLink} ${styles.mobileNavLink} ${path.includes('/quiz') && styles.activeLink}`}><MdOutlineQuiz className={styles.navIcon} />
+              <span>Quiz</span></div>
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path == '/leaderboard' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="leaderboard" style={path == '/leaderboard' ? { color: 'white' } : undefined} onClick={toggleMenu}>
-              <MdOutlineLeaderboard className={styles.navIcon} />
-              <span>LeaderBoard</span>
+          <li className={`${styles.navLi}`}>
+            <Link className={styles.navLinkContainer} to="leaderboard" style={path == '/leaderboard' ? { color: 'white' } : undefined} onClick={toggleMenu}>
+              <div className={`${styles.navLink} ${styles.mobileNavLink} ${path == '/leaderboard' && styles.activeLink}`}><MdOutlineLeaderboard className={styles.navIcon} />
+              <span>LeaderBoard</span></div>
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path == '/community' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="community" style={path == '/community' ? { color: 'white' } : undefined} onClick={toggleMenu}>
-              <RiUserCommunityLine className={styles.navIcon} />
-              <span>Community</span>
+          <li className={`${styles.navLi}`}>
+            <Link className={styles.navLinkContainer} to="community" style={path == '/community' ? { color: 'white' } : undefined} onClick={toggleMenu}>
+              <div className={`${styles.navLink} ${styles.mobileNavLink} ${path == '/community' && styles.activeLink}`}><RiUserCommunityLine className={styles.navIcon} />
+              <span>Community</span></div>
             </Link>
           </li>
 
-          <li className={`${styles.navLi} ${path == '/ai-chat' && styles.activeLink}`}>
-            <Link className={styles.navLink} to="ai-chat" style={path == '/ai-chat' ? { color: 'white' } : undefined} onClick={toggleMenu}>
-              <IoChatbubbleOutline className={styles.navIcon} />
-              <span>AI Chat</span>
+          <li className={`${styles.navLi}`}>
+            <Link className={styles.navLinkContainer} to="ai-chat" style={path == '/ai-chat' ? { color: 'white' } : undefined} onClick={toggleMenu}>
+              <div className={`${styles.navLink} ${styles.mobileNavLink} ${path == '/ai-chat' && styles.activeLink}`}><IoChatbubbleOutline className={styles.navIcon} />
+              <span>AI Chat</span></div>
             </Link>
           </li>
 

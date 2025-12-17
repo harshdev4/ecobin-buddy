@@ -27,6 +27,7 @@
 }
 
 .navLi {
+    width: 100%;
     color: var(--color-text-medium);
     padding: 10px 12px;
     border-radius: 12px;
@@ -43,19 +44,32 @@
     color: var(--color-white);
 }
 
+.navLinkContainer{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+}
+
 .navLink {
     text-decoration: none;
+    color: inherit;
     font-size: 1rem;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     row-gap: 8px;
-    color: inherit;
+    width: max-content;
+}
+
+.mobileNavLink{
+    padding: 10px 12px;
+    border-radius: 12px;
 }
 
 .activeLink {
     background-color: var(--color-primary-600);
-    color: var(white);
+    color: var(--color-white);
 }
 
 .activeLink:hover {

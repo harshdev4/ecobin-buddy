@@ -44,7 +44,7 @@ const Community = () => {
       <div className={styles.lineBreak}/>
       <div className={styles.feed}>
         {posts.map((post) => (
-          <PostCard key={post.id} post={post} />
+          <PostCard key={post._id} post={post} />
         ))}
       </div>
     </div>
