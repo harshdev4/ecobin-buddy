@@ -19,8 +19,12 @@
 }
 
 .user {
+  width: 170px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .text {

@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
     }, 
     level: {
         type: String,
-        default: "easy"
+        default: "Easy"
     },
     tips: {
         type: [mongoose.Schema.Types.ObjectId],

@@ -41,7 +41,7 @@ export const toggleLike = async (req, res) => {
                 postId,
                 { $pull: { likes: userId } },
                 { new: true }
-            );
+            ).populate('author', 'name');
         }
 
         else {
@@ -49,7 +49,7 @@ export const toggleLike = async (req, res) => {
                 postId,
                 { $addToSet: { likes: userId } },
                 { new: true }
-            );
+            ).populate('author', 'name');
         }
 
         res.status(200).json({ post });

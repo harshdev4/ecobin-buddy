@@ -1349,6 +1349,546 @@
         "text": "Reduce and segregate waste"
       },
       "difficulty": "Easy"
+    },
+    {
+      "id": 51,
+      "question": "Which process in waste management focuses on extracting value from mixed dry waste using mechanical and manual sorting?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Composting"
+        },
+        {
+          "id": 2,
+          "text": "Incineration"
+        },
+        {
+          "id": 3,
+          "text": "Material Recovery"
+        },
+        {
+          "id": 4,
+          "text": "Landfilling"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Material Recovery"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 52,
+      "question": "What is the biggest environmental risk of improper e-waste disposal?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Visual pollution"
+        },
+        {
+          "id": 2,
+          "text": "Noise pollution"
+        },
+        {
+          "id": 3,
+          "text": "Heavy metal leaching into soil and water"
+        },
+        {
+          "id": 4,
+          "text": "Odour generation"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Heavy metal leaching into soil and water"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 53,
+      "question": "Why is methane capture from landfills considered a climate mitigation strategy?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Methane improves soil quality"
+        },
+        {
+          "id": 2,
+          "text": "Methane is less harmful than oxygen"
+        },
+        {
+          "id": 3,
+          "text": "Methane has a higher global warming potential than CO2"
+        },
+        {
+          "id": 4,
+          "text": "Methane reduces waste volume"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Methane has a higher global warming potential than CO2"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 54,
+      "question": "Which waste treatment method significantly reduces volume but may release toxic emissions if not controlled?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Vermicomposting"
+        },
+        {
+          "id": 2,
+          "text": "Incineration"
+        },
+        {
+          "id": 3,
+          "text": "Recycling"
+        },
+        {
+          "id": 4,
+          "text": "Anaerobic digestion"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Incineration"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 55,
+      "question": "Extended Producer Responsibility (EPR) mainly holds which stakeholder accountable?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Consumers"
+        },
+        {
+          "id": 2,
+          "text": "Municipal bodies"
+        },
+        {
+          "id": 3,
+          "text": "Manufacturers and producers"
+        },
+        {
+          "id": 4,
+          "text": "Waste pickers"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Manufacturers and producers"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 56,
+      "question": "Why is mixed waste a major challenge for recycling plants?",
+      "options": [
+        {
+          "id": 1,
+          "text": "It increases waste generation"
+        },
+        {
+          "id": 2,
+          "text": "It contaminates recyclable materials"
+        },
+        {
+          "id": 3,
+          "text": "It produces methane"
+        },
+        {
+          "id": 4,
+          "text": "It reduces landfill size"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "It contaminates recyclable materials"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 57,
+      "question": "Which indicator best measures the efficiency of a city’s solid waste management system?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Population density"
+        },
+        {
+          "id": 2,
+          "text": "Waste segregation at source rate"
+        },
+        {
+          "id": 3,
+          "text": "Number of landfills"
+        },
+        {
+          "id": 4,
+          "text": "Road length"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Waste segregation at source rate"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 58,
+      "question": "Which component of waste contributes most to landfill leachate toxicity?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Paper"
+        },
+        {
+          "id": 2,
+          "text": "Organic waste"
+        },
+        {
+          "id": 3,
+          "text": "Hazardous and electronic waste"
+        },
+        {
+          "id": 4,
+          "text": "Textiles"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Hazardous and electronic waste"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 59,
+      "question": "Why is decentralized waste management preferred in urban planning?",
+      "options": [
+        {
+          "id": 1,
+          "text": "It increases transportation costs"
+        },
+        {
+          "id": 2,
+          "text": "It reduces burden on landfills and transport"
+        },
+        {
+          "id": 3,
+          "text": "It mixes all waste streams"
+        },
+        {
+          "id": 4,
+          "text": "It promotes incineration"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "It reduces burden on landfills and transport"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 60,
+      "question": "Which principle prioritizes waste prevention over waste treatment?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Circular economy"
+        },
+        {
+          "id": 2,
+          "text": "Linear economy"
+        },
+        {
+          "id": 3,
+          "text": "End-of-pipe approach"
+        },
+        {
+          "id": 4,
+          "text": "Landfill hierarchy"
+        }
+      ],
+      "answer": {
+        "id": 1,
+        "text": "Circular economy"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 61,
+      "question": "Why are sanitary landfills preferred over open dumps?",
+      "options": [
+        {
+          "id": 1,
+          "text": "They attract fewer people"
+        },
+        {
+          "id": 2,
+          "text": "They allow uncontrolled burning"
+        },
+        {
+          "id": 3,
+          "text": "They control leachate and gas emissions"
+        },
+        {
+          "id": 4,
+          "text": "They generate more waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "They control leachate and gas emissions"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 62,
+      "question": "What is the main limitation of composting mixed municipal waste?",
+      "options": [
+        {
+          "id": 1,
+          "text": "High cost"
+        },
+        {
+          "id": 2,
+          "text": "Plastic contamination"
+        },
+        {
+          "id": 3,
+          "text": "Low temperature"
+        },
+        {
+          "id": 4,
+          "text": "Excess oxygen"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Plastic contamination"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 63,
+      "question": "Which waste-to-energy method uses microorganisms in oxygen-free conditions?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Incineration"
+        },
+        {
+          "id": 2,
+          "text": "Aerobic composting"
+        },
+        {
+          "id": 3,
+          "text": "Anaerobic digestion"
+        },
+        {
+          "id": 4,
+          "text": "Pyrolysis"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Anaerobic digestion"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 64,
+      "question": "Which policy tool encourages consumers to return products after use?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Landfill tax"
+        },
+        {
+          "id": 2,
+          "text": "Deposit-refund system"
+        },
+        {
+          "id": 3,
+          "text": "Subsidy removal"
+        },
+        {
+          "id": 4,
+          "text": "Carbon trading"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Deposit-refund system"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 65,
+      "question": "Why is source segregation critical for circular economy models?",
+      "options": [
+        {
+          "id": 1,
+          "text": "It increases waste quantity"
+        },
+        {
+          "id": 2,
+          "text": "It preserves material quality for reuse"
+        },
+        {
+          "id": 3,
+          "text": "It promotes dumping"
+        },
+        {
+          "id": 4,
+          "text": "It reduces recycling"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "It preserves material quality for reuse"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 66,
+      "question": "Which waste stream poses the highest occupational risk to informal waste pickers?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Paper waste"
+        },
+        {
+          "id": 2,
+          "text": "Organic waste"
+        },
+        {
+          "id": 3,
+          "text": "Biomedical waste"
+        },
+        {
+          "id": 4,
+          "text": "Glass waste"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Biomedical waste"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 67,
+      "question": "What is the main environmental benefit of reducing single-use plastics?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Lower production cost"
+        },
+        {
+          "id": 2,
+          "text": "Reduced microplastic pollution"
+        },
+        {
+          "id": 3,
+          "text": "Increased landfill space"
+        },
+        {
+          "id": 4,
+          "text": "Higher recycling rates automatically"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "Reduced microplastic pollution"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 68,
+      "question": "Which metric best evaluates long-term sustainability of waste management?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Daily waste generation"
+        },
+        {
+          "id": 2,
+          "text": "Landfill height"
+        },
+        {
+          "id": 3,
+          "text": "Resource recovery rate"
+        },
+        {
+          "id": 4,
+          "text": "Collection frequency"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Resource recovery rate"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 69,
+      "question": "Why is informal sector integration important in Indian waste management systems?",
+      "options": [
+        {
+          "id": 1,
+          "text": "They generate more waste"
+        },
+        {
+          "id": 2,
+          "text": "They already recover a large share of recyclables"
+        },
+        {
+          "id": 3,
+          "text": "They increase landfill use"
+        },
+        {
+          "id": 4,
+          "text": "They eliminate segregation"
+        }
+      ],
+      "answer": {
+        "id": 2,
+        "text": "They already recover a large share of recyclables"
+      },
+      "difficulty": "Hard"
+    },
+    {
+      "id": 70,
+      "question": "Which approach treats waste as a resource rather than a liability?",
+      "options": [
+        {
+          "id": 1,
+          "text": "Open dumping"
+        },
+        {
+          "id": 2,
+          "text": "Linear disposal model"
+        },
+        {
+          "id": 3,
+          "text": "Circular economy approach"
+        },
+        {
+          "id": 4,
+          "text": "End disposal strategy"
+        }
+      ],
+      "answer": {
+        "id": 3,
+        "text": "Circular economy approach"
+      },
+      "difficulty": "Hard"
     }
   ]
 }

@@ -8,18 +8,20 @@ import Loader from "../../components/Loader/Loader.jsx";
 
 const Community = () => {
   const [posts, setPosts] = useState([]);
-  const {setUrlLocation} = useAuth();
+  const {setUrlLocation, loading, setLoading} = useAuth();
   
   const fetchPosts = async () => {
     try {
+      setLoading(true);
       const res = await axiosInstance.get('/fetch-posts');
       setPosts(res.data.posts);
     } catch (error) {
       console.log(error);
     }
+    finally{
+      setLoading(false);
+    }
   }
-
-  const {loading} = useAuth();
 
   useEffect(() => {
     setUrlLocation("community");
@@ -33,7 +35,7 @@ const Community = () => {
 
   return (
     <div className={styles.container}>
-      {loading && <Loader/>}
+      {(loading || posts.length === 0) && <Loader/>}
       <h1 className={styles.heading}>Community</h1>
       <p className={styles.subheading}>
         See what other eco-warriors are up to and share your own journey 🌍

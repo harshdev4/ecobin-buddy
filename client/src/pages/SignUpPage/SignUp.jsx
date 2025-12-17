@@ -18,7 +18,20 @@ const Signup = () => {
   };
 
   const handleSubmit = async (e) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+    const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d).{8,}$/;
+
     e.preventDefault();
+    if (!emailRegex.test(formData.email)) {
+      toast.error("Enter a valid email");
+      return;
+    }
+
+    if (!passwordRegex.test(formData.password)) {
+      toast.error("Password must be at least 8 characters long and include at least one letter and one number");
+      return;
+    }
+    
     setLoading(true);
     try {
       const res = await axiosInstance.post('/signup', formData);
