@@ -35,7 +35,7 @@ const Community = () => {
 
   return (
     <div className={styles.container}>
-      {(loading || posts.length === 0) && <Loader/>}
+      {(loading && posts.length === 0) && <Loader/>}
       <h1 className={styles.heading}>Community</h1>
       <p className={styles.subheading}>
         See what other eco-warriors are up to and share your own journey 🌍
@@ -45,6 +45,13 @@ const Community = () => {
 
       <div className={styles.lineBreak}/>
       <div className={styles.feed}>
+        {
+          (!loading && posts.length == 0) && 
+          <div className={styles.noPostImageContainer}>
+            <img src="/images/no-post.jpg" alt="no post" className={styles.noPostImage}/>
+          </div>
+        }
+
         {posts.map((post) => (
           <PostCard key={post._id} post={post} />
         ))}

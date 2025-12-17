@@ -36,6 +36,15 @@
   margin-top: 15px;
 }
 
+.noPostImageContainer{
+  max-width: 500px;
+  margin: auto;
+}
+
+.noPostImage{
+  width: 100%;
+}
+
 @media (max-width: 599px){
   .container{
     padding: 20px 10px;
