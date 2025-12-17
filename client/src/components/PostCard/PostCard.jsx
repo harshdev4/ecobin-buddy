@@ -35,7 +35,7 @@ const PostCard = ({ post }) => {
         </div>
 
         <div className={styles.actions}>
-          <div className={styles.like} onClick={handleLike}>{postState?.likes.includes(user.id) ? <IoMdHeart className={`${styles.heartIcon} ${styles.heartFull}`} /> : <IoMdHeartEmpty className={`${styles.heartIcon} ${styles.heartEmpty}`} />}<span>{postState?.likes.length}</span></div>
+          <div className={styles.like} onClick={handleLike}>{postState?.likes.includes(user?.id) ? <IoMdHeart className={`${styles.heartIcon} ${styles.heartFull}`} /> : <IoMdHeartEmpty className={`${styles.heartIcon} ${styles.heartEmpty}`} />}<span>{postState?.likes.length}</span></div>
           <div className={styles.comment}><MdOutlineAddComment className={styles.commentIcon} /></div>
         </div>
       </div>
