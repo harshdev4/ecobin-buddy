@@ -46,7 +46,7 @@ A comprehensive waste management education platform that combines interactive qu
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/echobin-buddy.git
+   git clone https://github.com/harshdev4/echobin-buddy.git
    cd echobin-buddy
    ```
 
@@ -109,20 +109,20 @@ A comprehensive waste management education platform that combines interactive qu
 ## 🔌 API Endpoints
 
 ### Authentication
-- `POST /api/auth/register` - User registration
-- `POST /api/auth/login` - User login
+- `POST /api/signup` - User registration
+- `POST /api/login` - User login
 
 ### Posts
-- `GET /api/posts` - Get all posts
-- `POST /api/posts` - Create a new post
-- `PUT /api/posts/:id` - Update a post
-- `DELETE /api/posts/:id` - Delete a post
+- `GET /api/fetch-posts` - Get all posts
+- `POST /api/submit-post` - Create a new post
+- `POST /toggleLike/:postId` - Toggle likes for the post
 
 ### AI
-- `POST /api/ai/assist` - Get AI assistance
+- `POST /api/analyse-image` - Get AI analyze your image
+- `POST /api/ai-chat` - Get AI assist you
 
 ### Quizzes
-- `GET /api/quizzes` - Get quiz data
+- `GET /api/fetch-quiz/:userId` - Get quiz data
 
 ## 🤝 Contributing
 
@@ -136,7 +136,7 @@ We welcome contributions! Please follow these steps:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
 
 ## 🙏 Acknowledgments
 

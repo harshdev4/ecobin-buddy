@@ -33,7 +33,7 @@ const upload = multer({
 });
 
 app.use('/api', UserRouter);
-app.use('/api', AiRouter);
+app.use('/api', AiRouter); 
 app.use('/api', PostRouter);
 
 
