@@ -38,8 +38,14 @@ body {
 
 .pageHeading {
     text-align: center;
-    color: var(--color-primary-600);
+    color: #1F7A4D;
     font-size: 2.4rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+    .pageHeading {
+        font-size: 1.7rem;
+    }
 }
