@@ -106,7 +106,7 @@ const Identify = () => {
     <>
       {pending && <Loader></Loader>}
       <div className={styles.identifyPage}>
-        <h1 className={styles.heading}>Identify Waste Type</h1>
+        <h1 className="pageHeading">Identify Waste Type</h1>
         <p className={styles.subheading}>
           Upload an image of waste and let AI identify its category.
         </p>

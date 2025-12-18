@@ -7,7 +7,7 @@ import Loader from '../../components/Loader/Loader.jsx';
 import { useNavigate } from 'react-router-dom';
 
 const LeaderBoard = () => {
-    const { user, loading, setLoading, setUrlLocation} = useAuth();
+    const { user, loading, setLoading, setUrlLocation } = useAuth();
     const [users, setUsers] = useState([]);
     const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const LeaderBoard = () => {
         setUrlLocation("leaderboard");
         if (!user) {
             if (loading) return;
-            navigate('/login'); 
+            navigate('/login');
         }
     }, [user, loading]);
 
@@ -39,7 +39,10 @@ const LeaderBoard = () => {
 
     return (
         <div className={styles.leaderBoardPage}>
-            <h2 className={styles.pageHeading}>LeaderBoard</h2>
+            <h2 className="pageHeading">LeaderBoard</h2>
+            <p className={styles.subheading}>
+                Top eco-champions—who’s winning the green race? ♻️
+            </p>
             {
                 loading ? <Loader /> : user &&
                     <div className={styles.userListContainer}>

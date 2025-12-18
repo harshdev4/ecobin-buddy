@@ -101,7 +101,7 @@ const Quiz = () => {
           quizId,
           isCorrect: true
         });
-      } catch {}
+      } catch { }
     }
   };
 
@@ -157,9 +157,11 @@ const Quiz = () => {
 
   /* ---------- MAIN UI ---------- */
   return (
-    <div className={styles.quizPage}>
-      <h2 className={styles.quizHeading}>Quiz</h2>
-
+    <div className={`${styles.quizPage} pagePadding`}>
+      <h2 className="pageHeading">Quiz</h2>
+      <p className={styles.subheading}>
+        Test your eco-smarts and see how green your choices really are 🌱
+      </p>
       <div className={styles.userQuizData}>
         <h3 className={styles.levelHeading}>Level: {level}</h3>
         <h3 className={styles.scoreCountContainer} title="Score"><GiStarMedal /> {score}</h3>

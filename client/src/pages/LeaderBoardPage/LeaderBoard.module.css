@@ -1,15 +1,7 @@
 .leaderBoardPage {
     position: relative;
-    padding: 20px 30px;
+    padding: 4rem 30px;
     min-height: 100dvh;
-}
-
-.pageHeading {
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #244d3b; 
-    margin-bottom: 0.5rem;
 }
 
 .userListContainer {
@@ -22,6 +14,14 @@
     background: #ffffff;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.subheading {
+  font-size: 1.05rem;
+  color: #587668;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .userList {
@@ -61,6 +61,10 @@
 
 @media (max-width: 599px){
     .leaderBoardPage{
-        padding: 20px 10px;
+        padding: 2rem 10px;
+    }
+
+    .subheading{
+        font-size: 0.95rem;
     }
 }

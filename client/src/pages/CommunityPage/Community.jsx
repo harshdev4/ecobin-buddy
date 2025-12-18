@@ -36,7 +36,7 @@ const Community = () => {
   return (
     <div className={styles.container}>
       {(loading && posts.length === 0) && <Loader/>}
-      <h1 className={styles.heading}>Community</h1>
+      <h1 className="pageHeading">Community</h1>
       <p className={styles.subheading}>
         See what other eco-warriors are up to and share your own journey 🌍
       </p>

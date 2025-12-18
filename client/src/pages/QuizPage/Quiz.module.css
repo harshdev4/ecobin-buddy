@@ -1,27 +1,27 @@
 .quizPage {
     position: relative;
-    padding: 20px 30px;
+    padding: 4rem 30px;
     min-height: 100dvh;
 }
 
-.quizHeading {
+.subheading {
+    font-size: 1.05rem;
+    color: #587668;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
     text-align: center;
-    font-size: 2.4rem;
-    font-weight: 700;
-    color: #244d3b;
-    margin-bottom: 0.5rem;
 }
 
 .levelIncreasedHeadingContainer {
     text-align: center;
     width: 100%;
     position: absolute;
-    top: 40%; 
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.levelIncreasedHeading{
+.levelIncreasedHeading {
     font-weight: 500;
 }
 
@@ -129,12 +129,16 @@
 }
 
 @media (max-width: 599px) {
+    .subheading{
+        font-size: 0.95rem;
+    }
+
     .afterEffect {
         width: 100%;
     }
 
     .quizPage {
-        padding: 20px 10px;
+        padding: 2rem 10px;
     }
 
     .quizArea {
