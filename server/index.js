@@ -26,6 +26,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 
 const __filename = fileURLToPath(import.meta.url);
+
 const __dirname = path.dirname(__filename);
 
 const upload = multer({
@@ -47,7 +48,7 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, async () => {
   await connectDB();
